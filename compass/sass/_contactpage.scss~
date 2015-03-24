@@ -112,8 +112,8 @@
     }    
 
     input#edit-submitted-e-mail {
-      width: 100%;
-      height: 100%;
+      width: 98%;
+      height: 98%;
     }    
 
     .form-text, .form-textarea {

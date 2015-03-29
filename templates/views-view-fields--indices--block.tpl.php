@@ -1,6 +1,22 @@
 <?php //dpm($variables); ?>
+<?php
 
-<table class="cotizaciones" height="84" width="100%">
+
+drupal_add_js("jQuery(document).ready(function () 
+{  
+var dolarOficial = jQuery('#oficial').text();
+var dolarOficialAnterior = jQuery('#oficial_anterior').text();
+var variacionDolar = dolarOficial - dolarOficialAnterior;
+alert('oficial:' + dolarOficial + 'oficial anterior:' + dolarOficialAnterior + 'Diferencia:' + variacionDolar);
+});", array(
+  'type' => 'inline',
+  'scope' => 'footer',
+  'group' => JS_THEME,
+  'weight' => 5,
+));
+?>
+
+<table class="cotizaciones" id="dolar" height="84" width="100%">
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">
@@ -15,10 +31,10 @@
 		<tr>
 			<td>
 				Oficial</td>
-			<td>
+			<td id="oficial">
 				<?php print $view->field['field_dolar_oficial']->advanced_render($row);?> </td>
-			<td>
-				| <?php print $view->field['field_dolar_oficial_anterior']->advanced_render($row); ?></td>
+			<td id="oficial_anterior">
+				 <?php print $view->field['field_dolar_oficial_anterior']->advanced_render($row); ?></td>
 			<td class="indice i_equal">
 				--</td>
 		</tr>
@@ -44,7 +60,7 @@
 		</tr>
 	</tbody>
 </table>
-<table class="cotizaciones" height="84" width="100%">
+<table class="cotizaciones" id="indices"   height="84" width="100%">
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">

@@ -5,30 +5,37 @@
 drupal_add_js("jQuery(document).ready(function () 
 { 
 
+
+// Lectura Dolar Oficial
 var dolarOficial = jQuery('#oficial').text();
 var dolarOficialAnterior = jQuery('#oficial_anterior').text();
 
+var diffOficial = dolarOficial - dolarOficialAnterior;
+//alert('diff oficial:' + diffOficial);
 
-if (dolarOficial > dolarOficialAnterior) {
-	//alert('oficial:' + dolarOficial + 'oficial anterior:' + dolarOficialAnterior + 'Diferencia:' );
+// Comparacion y seteo variacion dolar oficial
+if (diffOficial > 0) {
+//	alert('oficial:' + dolarOficial + 'oficial anterior:' + dolarOficialAnterior + 'Diferencia:' );
 	jQuery('#dolar_oficial_indice').removeClass('i_equal').removeClass('i_down').addClass('i_up');
-} else if (dolarOficial < dolarOficialAnterior) {
-	//alert('oficial:' + dolarOficial + 'oficial anterior:' + dolarOficialAnterior + 'Diferencia:' );
+} else if (diffOficial < 0) {
+//	alert('oficial:' + dolarOficial + 'oficial anterior:' + dolarOficialAnterior + 'Diferencia:' );
 	jQuery('#dolar_oficial_indice').removeClass('i_equal').removeClass('i_up').addClass('i_down');
 } else {
+//	alert(diffOficial);
 	jQuery('#dolar_oficial_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
 }
 
-
+// Lectura dolar informal
 var dolarInformal = jQuery('#informal').text();
 var dolarInformalAnterior = jQuery('#informal_anterior').text();
 
 // alert('dolarinformal: ' + dolarInformal );
 // alert('dolarInformalAnterior: ' + dolarInformalAnterior);
 
-
+// comparacion variacion dolar informal
 var diffInformal = dolarInformal - dolarInformalAnterior;
 
+// seteo clase indice de acuerdo a la variacion dolar informal
 // alert(diffInformal);
 if (diffInformal > 0) {
 //	alert(dolarInformal + 'mayor:' + dolarInformlAnterior );
@@ -41,11 +48,15 @@ if (diffInformal > 0) {
 	jQuery('#dolar_informal_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
 }
 
+
+// Lectura ccl
 var ccl = jQuery('#ccl').text();
 var cclAnterior = jQuery('#ccl_anterior').text();
 
+// comparacion variacion ccl
 var diffCcl = ccl - cclAnterior;
 
+// seteo clase indice de acuerdo a variacion ccl
 if (diffCcl > 0) {
 // 	alert(ccl + 'mayor:' + cclAnterior );
 	jQuery('#ccl_indice').removeClass('i_equal').removeClass('i_down').addClass('i_up');
@@ -56,6 +67,61 @@ if (diffCcl > 0) {
 	jQuery('#ccl_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
 }
 
+
+// lectura de ipcnu
+var ipcnu = jQuery('#ipcnu').text();
+var ipcnuAnterior = jQuery('#ipcnu_anterior').text();
+
+// comparacion variacion ipcnu
+var diffipcnu = ipcnu - ipcnuAnterior;
+
+// seteo clase indice de acuerdo a la variacion ipcnu
+if (diffipcnu > 0) {
+// 	alert(ipcnu + 'mayor:' + ipcnuAnterior );
+	jQuery('#ipcnu_indice').removeClass('i_equal').removeClass('i_down').addClass('i_up');
+} else if (diffipcnu < 0) {
+//	alert('menor' );
+	jQuery('#ipcnu_indice').removeClass('i_equal').removeClass('i_up').addClass('i_down');
+} else {
+	jQuery('#ipcnu_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
+}
+
+// lectura ipc congreso
+var ipc_congreso = jQuery('#ipc_congreso').text();
+var ipc_congresoAnterior = jQuery('#ipc_congreso_anterior').text();
+
+//comparacion variacion ipc congreso
+var diffipc_congreso = ipc_congreso - ipc_congresoAnterior;
+
+// seteo clase indicie de acuerdo a la variacion ipc congreso
+if (diffipc_congreso > 0) {
+// 	alert(ipc_congreso + 'mayor:' + ipc_congresoAnterior );
+	jQuery('#ipc_congreso_indice').removeClass('i_equal').removeClass('i_down').addClass('i_up');
+} else if (diffipc_congreso < 0) {
+//	alert('menor' );
+	jQuery('#ipc_congreso_indice').removeClass('i_equal').removeClass('i_up').addClass('i_down');
+} else {
+	jQuery('#ipc_congreso_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
+}
+
+
+// lectura ipc premise
+var ipc_premise = jQuery('#ipc_premise').text();
+var ipc_premiseAnterior = jQuery('#ipc_premise_anterior').text();
+
+// comparacion variacion ipc premise
+var diffipc_premise = ipc_premise - ipc_premiseAnterior;
+
+// seteo clase indice de acuerdo a la variacion del ipc premise
+if (diffipc_premise > 0) {
+// 	alert(ipc_premise + 'mayor:' + ipc_premiseAnterior );
+	jQuery('#ipc_premise_indice').removeClass('i_equal').removeClass('i_down').addClass('i_up');
+} else if (diffipc_premise < 0) {
+//	alert('menor' );
+	jQuery('#ipc_premise_indice').removeClass('i_equal').removeClass('i_up').addClass('i_down');
+} else {
+	jQuery('#ipc_premise_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
+}
 
 
 
@@ -86,7 +152,7 @@ if (diffCcl > 0) {
 				<?php print $view->field['field_dolar_oficial']->advanced_render($row);?> </td>
 			<td id="oficial_anterior">
 				 <?php print $view->field['field_dolar_oficial_anterior']->advanced_render($row); ?></td>
-			<td  id="dolar_oficial_indice" class="indice i_equal">
+			<td  id="dolar_oficial_indice" class="indice ">
 				--</td>
 		</tr>
 		<tr>
@@ -126,31 +192,31 @@ if (diffCcl > 0) {
 		<tr>
 			<td>
 				IPCnu</td>
-			<td>
+			<td id="ipcnu">
 				<?php print $view->field['field_ipcnu']->advanced_render($row); ?></td>
-			<td>
-				|<?php print $view->field['field_ipcnu_anterior']->advanced_render($row); ?></td>
-			<td class="indice i_down">
+			<td id="ipcnu_anterior">
+				<?php print $view->field['field_ipcnu_anterior']->advanced_render($row); ?></td>
+			<td id="ipcnu_indice" class="indice i_equal">
 				--</td>
 		</tr>
 		<tr>
 			<td>
 				IPC Congreso</td>
-			<td>
+			<td id="ipc_congreso">
 				<?php print $view->field['field_ipc_congreso']->advanced_render($row); ?></td>
-			<td>
-				| <?php print $view->field['field_ipc_congreso_anterior']->advanced_render($row); ?></td>
-			<td class="indice i_up">
+			<td id="ipc_congreso_anterior">
+				 <?php print $view->field['field_ipc_congreso_anterior']->advanced_render($row); ?></td>
+			<td id="ipc_congreso_indice" class="indice i_up">
 				--</td>
 		</tr>
 		<tr>
 			<td>
 				IPC Premise</td>
-			<td>
+			<td id="ipc_premise">
 				<?php print $view->field['field_ipc_premise']->advanced_render($row); ?></td>
-			<td>
-				|<?php print $view->field['field_ipc_premise_anterior']->advanced_render($row); ?>
-			<td class="indice i_down">
+			<td id="ipc_premise_anterior">
+				<?php print $view->field['field_ipc_premise_anterior']->advanced_render($row); ?>
+			<td id="ipc_premise_indice"  class="indice i_down">
 				--</td>
 		</tr>
 	</tbody>

@@ -8548,52 +8548,54 @@ body {
 }
 
 /* brand images */
-/* line 10, ../sass/_backgrounds.scss */
-.navbar-header {
-  background: url("../images/small_mk.png") 80% 10px no-repeat;
+@media (min-width: 500px) {
+  /* line 10, ../sass/_backgrounds.scss */
+  .navbar-header {
+    background: url("../images/small_mk.png") 80% 10px no-repeat;
+  }
 }
 
-/* line 14, ../sass/_backgrounds.scss */
+/* line 16, ../sass/_backgrounds.scss */
 .navbar-brand,
 .footer {
   background: #F8F8F8 url("../images/small-ev.png") 50% 50% no-repeat;
 }
-/* line 18, ../sass/_backgrounds.scss */
+/* line 20, ../sass/_backgrounds.scss */
 .navbar-brand:hover,
 .footer:hover {
   background-color: #F8F8F8 !important;
 }
 
 @media (min-width: 720px) {
-  /* line 25, ../sass/_backgrounds.scss */
+  /* line 27, ../sass/_backgrounds.scss */
   .navbar-header {
     background: url("../images/miguel-bg.png") right 10px no-repeat;
   }
 
-  /* line 29, ../sass/_backgrounds.scss */
+  /* line 31, ../sass/_backgrounds.scss */
   .navbar-brand,
   .footer {
     background: transparent url("../images/ev-logo.png") 0 0 no-repeat;
   }
 }
-/* line 35, ../sass/_backgrounds.scss */
+/* line 37, ../sass/_backgrounds.scss */
 .footer {
   background-color: transparent;
   background-position: 50% bottom;
 }
 
 /* Social links block */
-/* line 45, ../sass/_backgrounds.scss */
+/* line 47, ../sass/_backgrounds.scss */
 #block-block-2 a.tw-icon {
   background: url("../images/twitter.png") 50% 50% no-repeat;
 }
-/* line 48, ../sass/_backgrounds.scss */
+/* line 50, ../sass/_backgrounds.scss */
 #block-block-2 a.fb-icon {
   background: url("../images/facebook.png") 50% 50% no-repeat;
 }
 
 /* Light grey background */
-/* line 55, ../sass/_backgrounds.scss */
+/* line 57, ../sass/_backgrounds.scss */
 #block-views-recomendados-block-2 .well,
 #page-header,
 aside {
@@ -8602,7 +8604,7 @@ aside {
 
 /* Blue gradient button */
 /*#user-login-form .form-submit,*/
-/* line 63, ../sass/_backgrounds.scss */
+/* line 65, ../sass/_backgrounds.scss */
 .sf-menu,
 .sf-menu li a {
   background: url("../images/button-bg.png") 0 0 repeat-x;
@@ -8610,24 +8612,24 @@ aside {
 
 /* Blue gradient button:hover; */
 /*#user-login-form .form-submit,*/
-/* line 70, ../sass/_backgrounds.scss */
+/* line 72, ../sass/_backgrounds.scss */
 .sf-menu li a:active, .sf-menu li a:hover, .sf-menu li a:focus {
   background-position: 0 -40px;
 }
 
 /* blue gradient for blocks */
-/* line 76, ../sass/_backgrounds.scss */
+/* line 78, ../sass/_backgrounds.scss */
 .sf-menu ul {
   background: #084AA1 url("../images/blue-grad.png") 0 bottom repeat-x;
 }
 
-/* line 80, ../sass/_backgrounds.scss */
+/* line 82, ../sass/_backgrounds.scss */
 .sf-menu ul li a {
   background: transparent;
 }
 
 /* blue hover effect*/
-/* line 84, ../sass/_backgrounds.scss */
+/* line 86, ../sass/_backgrounds.scss */
 .sf-menu ul li a:hover {
   background: #28578F;
 }

@@ -8,7 +8,9 @@ body {
 
 /* brand images */
 .navbar-header {
-  background: url("../images/small_mk.png") 80% 10px no-repeat;   
+  @include breakpoint(500px) {
+    background: url("../images/small_mk.png") 80% 10px no-repeat;   
+  }
 }
 
 .navbar-brand,

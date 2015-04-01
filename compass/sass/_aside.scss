@@ -60,8 +60,7 @@ aside {
 }
 
 /* xchange */
-aside #block-block-13,
-#block-block-12 {
+.view.view-indices.view-id-indices.view-display-id-block, aside #block-block-13, #block-block-12 {
   background: #FFF;
   border: 1px #CCC solid; 
   margin-bottom: 20px;
@@ -91,8 +90,8 @@ aside #block-block-13,
   }
 
   td, th {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   td.indice {

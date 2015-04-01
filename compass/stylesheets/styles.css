@@ -8716,7 +8716,7 @@ button.cupid-green:active {
 /* line 53, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a,
 #block-block-6 a.btn,
-#block-block-10 a.btn,
+#block-block-10 a.btn, .views-field-field-base .file,
 .field-type-file .file,
 .page-node #pdf-size .file,
 .node-readmore a,
@@ -8740,7 +8740,7 @@ button.cupid-green:active {
 /* line 69, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:hover,
 #block-block-6 a.btn:hover,
-#block-block-10 a.btn:hover,
+#block-block-10 a.btn:hover, .views-field-field-base .file:hover,
 .field-type-file .file:hover,
 .page-node #pdf-size .file:hover,
 .node-readmore a:hover,
@@ -8765,7 +8765,7 @@ button.cupid-green:active {
 #block-block-6 a.btn:active,
 #block-block-6 a.btn:focus,
 #block-block-10 a.btn:active,
-#block-block-10 a.btn:focus,
+#block-block-10 a.btn:focus, .views-field-field-base .file:active, .views-field-field-base .file:focus,
 .field-type-file .file:active,
 .field-type-file .file:focus,
 .page-node #pdf-size .file:active,
@@ -10349,16 +10349,16 @@ h1.orange-header span {
 }
 
 /* line 61, ../sass/styles.scss */
-.field-type-file .file {
+.field-type-file .file, .views-field-field-base .file {
   font-size: 20px;
   padding: 8px 15px;
 }
 /* line 65, ../sass/styles.scss */
-.field-type-file .file a {
+.field-type-file .file a, .views-field-field-base .file a {
   color: #FFF;
 }
 /* line 67, ../sass/styles.scss */
-.field-type-file .file a:hover {
+.field-type-file .file a:hover, .views-field-field-base .file a:hover {
   text-decoration: none;
 }
 

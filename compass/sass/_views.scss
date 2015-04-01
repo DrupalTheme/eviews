@@ -3,7 +3,7 @@
 /* Home View */
 .contenedor {
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
 
     @include breakpoint(720px) {
       margin-right: 20px;

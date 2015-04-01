@@ -9345,10 +9345,14 @@ aside .region {
 /* line 39, ../sass/_aside.scss */
 .logged-in #simplenews-block-form-1 .form-submit {
   float: left;
+  position: absolute;
+  right: 1px;
+  top: 20px;
+  width: 75px;
 }
 
 /* Chart */
-/* line 44, ../sass/_aside.scss */
+/* line 48, ../sass/_aside.scss */
 #block-block-14,
 #block-block-5 {
   background: #FFF;
@@ -9359,19 +9363,19 @@ aside .region {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 53, ../sass/_aside.scss */
+/* line 57, ../sass/_aside.scss */
 #block-block-14 #highchart-render,
 #block-block-5 #highchart-render {
   xheight: 300px;
 }
-/* line 57, ../sass/_aside.scss */
+/* line 61, ../sass/_aside.scss */
 #block-block-14 .highcharts-legend,
 #block-block-5 .highcharts-legend {
   display: none;
 }
 
 /* xchange */
-/* line 63, ../sass/_aside.scss */
+/* line 67, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block, aside #block-block-13, #block-block-12 {
   background: #FFF;
   border: 1px #CCC solid;
@@ -9381,39 +9385,39 @@ aside .region {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 71, ../sass/_aside.scss */
+/* line 75, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block h2, aside #block-block-13 h2, #block-block-12 h2 {
   display: none;
 }
-/* line 77, ../sass/_aside.scss */
+/* line 81, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block tr td:first-child, aside #block-block-13 tr td:first-child, #block-block-12 tr td:first-child {
   color: #162b4a;
   font-size: 16px;
 }
-/* line 82, ../sass/_aside.scss */
+/* line 86, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block tr.naranja, aside #block-block-13 tr.naranja, #block-block-12 tr.naranja {
   color: #f97431;
   height: 40px;
 }
-/* line 86, ../sass/_aside.scss */
+/* line 90, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block tr.naranja td:first-child, aside #block-block-13 tr.naranja td:first-child, #block-block-12 tr.naranja td:first-child {
   color: #f97431;
 }
-/* line 92, ../sass/_aside.scss */
+/* line 96, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td, .view.view-indices.view-id-indices.view-display-id-block th, aside #block-block-13 td, aside #block-block-13 th, #block-block-12 td, #block-block-12 th {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 97, ../sass/_aside.scss */
+/* line 101, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td.indice, aside #block-block-13 td.indice, #block-block-12 td.indice {
   background: url("../images/index-icons.png") 50% 7px no-repeat;
   text-indent: -9999px;
 }
-/* line 101, ../sass/_aside.scss */
+/* line 105, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td.indice.i_down, aside #block-block-13 td.indice.i_down, #block-block-12 td.indice.i_down {
   background-position: 50% -41px;
 }
-/* line 105, ../sass/_aside.scss */
+/* line 109, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td.indice.i_up, aside #block-block-13 td.indice.i_up, #block-block-12 td.indice.i_up {
   background-position: 50% -15px;
 }
@@ -10334,7 +10338,7 @@ img {
 /* line 49, ../sass/styles.scss */
 h1.orange-header {
   padding-bottom: 5px;
-  font-size: 30px !important;
+  font-size: 24 !important;
   position: relative;
 }
 /* line 54, ../sass/styles.scss */

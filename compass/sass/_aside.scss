@@ -1,11 +1,18 @@
 /* Aside region style */
 
 aside {
-  border: 1px #CCC solid;
-  padding: 10px 0;
+  xborder: 1px #CCC solid;
+  xpadding: 10px 0;
 
   .region {
     padding: 0 10px;
+  }
+
+  & > .region {
+    border: 1px #CCC solid;
+    padding: 20px;
+
+    @include border-radius(5px);
   }
 }
 

@@ -36,6 +36,7 @@
       $(this).children().each(function(i){
       if ($(this).height() > currentTallest) { 
         currentTallest = $(this).height(); }
+        $('aside .region').css({'height': currentTallest});
       });
       if (!px && Number.prototype.pxToEm) currentTallest = currentTallest.pxToEm(); //use ems unless px is specified
       // for ie6, set height since min-height isn't supported

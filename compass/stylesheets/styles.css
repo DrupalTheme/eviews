@@ -9442,7 +9442,7 @@ aside .region {
 .contenedor h3 {
   border-bottom: 1px #f57c14 solid;
   line-height: 1.4;
-  padding: 0 0 5px;
+  padding: 0 0 4px;
 }
 /* line 21, ../sass/_views.scss */
 .contenedor h3 .category a {

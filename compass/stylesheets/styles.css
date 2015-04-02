@@ -8548,52 +8548,54 @@ body {
 }
 
 /* brand images */
-/* line 10, ../sass/_backgrounds.scss */
-.navbar-header {
-  background: url("../images/small_mk.png") 80% 10px no-repeat;
+@media (min-width: 500px) {
+  /* line 10, ../sass/_backgrounds.scss */
+  .navbar-header {
+    background: url("../images/small_mk.png") 80% 10px no-repeat;
+  }
 }
 
-/* line 14, ../sass/_backgrounds.scss */
+/* line 16, ../sass/_backgrounds.scss */
 .navbar-brand,
 .footer {
   background: #F8F8F8 url("../images/small-ev.png") 50% 50% no-repeat;
 }
-/* line 18, ../sass/_backgrounds.scss */
+/* line 20, ../sass/_backgrounds.scss */
 .navbar-brand:hover,
 .footer:hover {
   background-color: #F8F8F8 !important;
 }
 
 @media (min-width: 720px) {
-  /* line 25, ../sass/_backgrounds.scss */
+  /* line 27, ../sass/_backgrounds.scss */
   .navbar-header {
     background: url("../images/miguel-bg.png") right 10px no-repeat;
   }
 
-  /* line 29, ../sass/_backgrounds.scss */
+  /* line 31, ../sass/_backgrounds.scss */
   .navbar-brand,
   .footer {
     background: transparent url("../images/ev-logo.png") 0 0 no-repeat;
   }
 }
-/* line 35, ../sass/_backgrounds.scss */
+/* line 37, ../sass/_backgrounds.scss */
 .footer {
   background-color: transparent;
   background-position: 50% bottom;
 }
 
 /* Social links block */
-/* line 45, ../sass/_backgrounds.scss */
+/* line 47, ../sass/_backgrounds.scss */
 #block-block-2 a.tw-icon {
   background: url("../images/twitter.png") 50% 50% no-repeat;
 }
-/* line 48, ../sass/_backgrounds.scss */
+/* line 50, ../sass/_backgrounds.scss */
 #block-block-2 a.fb-icon {
   background: url("../images/facebook.png") 50% 50% no-repeat;
 }
 
 /* Light grey background */
-/* line 55, ../sass/_backgrounds.scss */
+/* line 57, ../sass/_backgrounds.scss */
 #block-views-recomendados-block-2 .well,
 #page-header,
 aside {
@@ -8602,7 +8604,7 @@ aside {
 
 /* Blue gradient button */
 /*#user-login-form .form-submit,*/
-/* line 63, ../sass/_backgrounds.scss */
+/* line 65, ../sass/_backgrounds.scss */
 .sf-menu,
 .sf-menu li a {
   background: url("../images/button-bg.png") 0 0 repeat-x;
@@ -8610,24 +8612,24 @@ aside {
 
 /* Blue gradient button:hover; */
 /*#user-login-form .form-submit,*/
-/* line 70, ../sass/_backgrounds.scss */
+/* line 72, ../sass/_backgrounds.scss */
 .sf-menu li a:active, .sf-menu li a:hover, .sf-menu li a:focus {
   background-position: 0 -40px;
 }
 
 /* blue gradient for blocks */
-/* line 76, ../sass/_backgrounds.scss */
+/* line 78, ../sass/_backgrounds.scss */
 .sf-menu ul {
   background: #084AA1 url("../images/blue-grad.png") 0 bottom repeat-x;
 }
 
-/* line 80, ../sass/_backgrounds.scss */
+/* line 82, ../sass/_backgrounds.scss */
 .sf-menu ul li a {
   background: transparent;
 }
 
 /* blue hover effect*/
-/* line 84, ../sass/_backgrounds.scss */
+/* line 86, ../sass/_backgrounds.scss */
 .sf-menu ul li a:hover {
   background: #28578F;
 }
@@ -8716,7 +8718,7 @@ button.cupid-green:active {
 /* line 53, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a,
 #block-block-6 a.btn,
-#block-block-10 a.btn,
+#block-block-10 a.btn, .views-field-field-base .file,
 .field-type-file .file,
 .page-node #pdf-size .file,
 .node-readmore a,
@@ -8740,7 +8742,7 @@ button.cupid-green:active {
 /* line 69, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:hover,
 #block-block-6 a.btn:hover,
-#block-block-10 a.btn:hover,
+#block-block-10 a.btn:hover, .views-field-field-base .file:hover,
 .field-type-file .file:hover,
 .page-node #pdf-size .file:hover,
 .node-readmore a:hover,
@@ -8765,7 +8767,7 @@ button.cupid-green:active {
 #block-block-6 a.btn:active,
 #block-block-6 a.btn:focus,
 #block-block-10 a.btn:active,
-#block-block-10 a.btn:focus,
+#block-block-10 a.btn:focus, .views-field-field-base .file:active, .views-field-field-base .file:focus,
 .field-type-file .file:active,
 .field-type-file .file:focus,
 .page-node #pdf-size .file:active,
@@ -9345,10 +9347,14 @@ aside .region {
 /* line 39, ../sass/_aside.scss */
 .logged-in #simplenews-block-form-1 .form-submit {
   float: left;
+  position: absolute;
+  right: 1px;
+  top: 20px;
+  width: 75px;
 }
 
 /* Chart */
-/* line 44, ../sass/_aside.scss */
+/* line 48, ../sass/_aside.scss */
 #block-block-14,
 #block-block-5 {
   background: #FFF;
@@ -9359,19 +9365,19 @@ aside .region {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 53, ../sass/_aside.scss */
+/* line 57, ../sass/_aside.scss */
 #block-block-14 #highchart-render,
 #block-block-5 #highchart-render {
   xheight: 300px;
 }
-/* line 57, ../sass/_aside.scss */
+/* line 61, ../sass/_aside.scss */
 #block-block-14 .highcharts-legend,
 #block-block-5 .highcharts-legend {
   display: none;
 }
 
 /* xchange */
-/* line 63, ../sass/_aside.scss */
+/* line 67, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block, aside #block-block-13, #block-block-12 {
   background: #FFF;
   border: 1px #CCC solid;
@@ -9381,39 +9387,39 @@ aside .region {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 71, ../sass/_aside.scss */
+/* line 75, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block h2, aside #block-block-13 h2, #block-block-12 h2 {
   display: none;
 }
-/* line 77, ../sass/_aside.scss */
+/* line 81, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block tr td:first-child, aside #block-block-13 tr td:first-child, #block-block-12 tr td:first-child {
   color: #162b4a;
   font-size: 16px;
 }
-/* line 82, ../sass/_aside.scss */
+/* line 86, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block tr.naranja, aside #block-block-13 tr.naranja, #block-block-12 tr.naranja {
   color: #f97431;
   height: 40px;
 }
-/* line 86, ../sass/_aside.scss */
+/* line 90, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block tr.naranja td:first-child, aside #block-block-13 tr.naranja td:first-child, #block-block-12 tr.naranja td:first-child {
   color: #f97431;
 }
-/* line 92, ../sass/_aside.scss */
+/* line 96, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td, .view.view-indices.view-id-indices.view-display-id-block th, aside #block-block-13 td, aside #block-block-13 th, #block-block-12 td, #block-block-12 th {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 97, ../sass/_aside.scss */
+/* line 101, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td.indice, aside #block-block-13 td.indice, #block-block-12 td.indice {
   background: url("../images/index-icons.png") 50% 7px no-repeat;
   text-indent: -9999px;
 }
-/* line 101, ../sass/_aside.scss */
+/* line 105, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td.indice.i_down, aside #block-block-13 td.indice.i_down, #block-block-12 td.indice.i_down {
   background-position: 50% -41px;
 }
-/* line 105, ../sass/_aside.scss */
+/* line 109, ../sass/_aside.scss */
 .view.view-indices.view-id-indices.view-display-id-block td.indice.i_up, aside #block-block-13 td.indice.i_up, #block-block-12 td.indice.i_up {
   background-position: 50% -15px;
 }
@@ -9423,7 +9429,7 @@ aside .region {
 /* line 4, ../sass/_views.scss */
 .contenedor {
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
 }
 @media (min-width: 720px) {
   /* line 4, ../sass/_views.scss */
@@ -9436,7 +9442,7 @@ aside .region {
 .contenedor h3 {
   border-bottom: 1px #f57c14 solid;
   line-height: 1.4;
-  padding: 0 0 5px;
+  padding: 0 0 4px;
 }
 /* line 21, ../sass/_views.scss */
 .contenedor h3 .category a {
@@ -10334,7 +10340,7 @@ img {
 /* line 49, ../sass/styles.scss */
 h1.orange-header {
   padding-bottom: 5px;
-  font-size: 30px !important;
+  font-size: 24 !important;
   position: relative;
 }
 /* line 54, ../sass/styles.scss */
@@ -10345,16 +10351,16 @@ h1.orange-header span {
 }
 
 /* line 61, ../sass/styles.scss */
-.field-type-file .file {
+.field-type-file .file, .views-field-field-base .file {
   font-size: 20px;
   padding: 8px 15px;
 }
 /* line 65, ../sass/styles.scss */
-.field-type-file .file a {
+.field-type-file .file a, .views-field-field-base .file a {
   color: #FFF;
 }
 /* line 67, ../sass/styles.scss */
-.field-type-file .file a:hover {
+.field-type-file .file a:hover, .views-field-field-base .file a:hover {
   text-decoration: none;
 }
 
@@ -10442,6 +10448,7 @@ aside {
   border-color: #CCC;
   box-shadow: none;
   margin-bottom: 0;
+  margin-top: 20px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;

@@ -3,15 +3,28 @@
 
 
 drupal_add_js("jQuery(document).ready(function () 
-{ 
+{
 
+
+//  var coinmonitor = 'http://coinmonitor.info/api/dolar_ar';
+//	jQuery.getJSON(coinmonitor, data, function(result) {
+//  alert(result);
+//   });
+
+
+
+// Leo el json de coinmonitor
+// jQuery.getJSON('http://coinmonitor.info/api/dolar_ar', function(dolarcm) {
+             // jQuery('#oficial').text(dolarcm.DOL_oficial);
+             // alert(dolarcm.DOL_oficial);
+          //});
 
 // Lectura Dolar Oficial
 var dolarOficial = jQuery('#oficial').text();
 var dolarOficialAnterior = jQuery('#oficial_anterior').text();
 
 var diffOficial = dolarOficial - dolarOficialAnterior;
-//alert('diff oficial:' + diffOficial);
+// alert('diff oficial:' + diffOficial);
 
 // Comparacion y seteo variacion dolar oficial
 if (diffOficial > 0) {
@@ -123,7 +136,23 @@ if (diffipc_premise > 0) {
 	jQuery('#ipc_premise_indice').removeClass('i_down').removeClass('i_up').addClass('i_equal');
 }
 
+// alert('diff oficial:' + diffOficial);
 
+    var url = 'http://coinmonitor.info/api/dolar_ar';
+
+    function jsonpCallback(response) {
+//      alert('jsonok');
+    }
+
+    jQuery.ajax({
+        url: url,
+        dataType: 'jsonp',
+        error: function(xhr, status, error) {
+//            alert('error:' + error.message);
+        },
+        success: jsonpCallback
+    });
+    return false;
 
 });", array(
   'type' => 'inline',
@@ -132,6 +161,7 @@ if (diffipc_premise > 0) {
   'weight' => 5,
 ));
 ?>
+
 
 <table class="cotizaciones" id="dolar" height="84" width="100%">
 	<tbody>
@@ -221,3 +251,5 @@ if (diffipc_premise > 0) {
 		</tr>
 	</tbody>
 </table>
+
+

@@ -77,7 +77,7 @@ aside {
 
 #page-header {
   border: 1px #CECECE solid;
-  margin-bottom: 1h0px;
+  margin-bottom: 10px;
   overflow: hidden;
   padding: 10px;
 }
@@ -167,3 +167,10 @@ aside {
 .view.view-home.view-id-home.view-display-id-page {
   margin-top: -15px;
 }
+
+/* sobre escribo el margen inferior del nav para disminuir espacios */
+.navbar {
+  margin-bottom: 5px;
+}
+
+

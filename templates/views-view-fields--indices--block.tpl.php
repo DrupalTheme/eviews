@@ -167,7 +167,7 @@ if (diffipc_premise > 0) {
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">
-				Dolar</td>
+				Dólar</td>
 			<td width="20%">
 				<?php echo date('d-M');?></td>
 			<td width="20%">

@@ -9325,26 +9325,32 @@ aside > .region {
 
 /* line 19, ../sass/_aside.scss */
 #block-simplenews-1 {
-  padding-top: 10px;
+  padding-top: -10px;
   margin-bottom: 20px;
 }
+/* line 22, ../sass/_aside.scss */
+#block-simplenews-1 h2, #block-simplenews-1 .h2 {
+  font-size: 16px !important;
+  margin-top: -3px;
+}
 
-/* line 26, ../sass/_aside.scss */
+/* line 30, ../sass/_aside.scss */
 #simplenews-block-form-1 label, #simplenews-block-form-1 .form-text {
   color: #AAA;
   font-size: 16px;
   font-weight: 100;
 }
-/* line 31, ../sass/_aside.scss */
+/* line 35, ../sass/_aside.scss */
 #simplenews-block-form-1 label {
   top: 7px;
+  left: 10px;
 }
-/* line 34, ../sass/_aside.scss */
+/* line 39, ../sass/_aside.scss */
 #simplenews-block-form-1 .form-item-mail {
   float: left;
   width: 68%;
 }
-/* line 38, ../sass/_aside.scss */
+/* line 43, ../sass/_aside.scss */
 #simplenews-block-form-1 .form-submit {
   float: right;
   padding-left: 5px;
@@ -9352,7 +9358,7 @@ aside > .region {
   width: 30%;
 }
 
-/* line 46, ../sass/_aside.scss */
+/* line 51, ../sass/_aside.scss */
 .logged-in #simplenews-block-form-1 .form-submit {
   float: left;
   position: absolute;
@@ -9362,7 +9368,7 @@ aside > .region {
 }
 
 /* Chart */
-/* line 55, ../sass/_aside.scss */
+/* line 60, ../sass/_aside.scss */
 #block-block-14,
 #block-block-5 {
   background: #FFF;
@@ -9373,20 +9379,19 @@ aside > .region {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 64, ../sass/_aside.scss */
+/* line 69, ../sass/_aside.scss */
 #block-block-14 #highchart-render,
 #block-block-5 #highchart-render {
   xheight: 300px;
 }
-/* line 68, ../sass/_aside.scss */
+/* line 73, ../sass/_aside.scss */
 #block-block-14 .highcharts-legend,
 #block-block-5 .highcharts-legend {
   display: none;
 }
 
-/* xchange */
-/* line 74, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block, aside #block-block-13, #block-block-12 {
+/* line 78, ../sass/_aside.scss */
+aside #block-block-13, #block-block-12, #block-block-16 {
   background: #FFF;
   border: 1px #CCC solid;
   margin-bottom: 20px;
@@ -9395,40 +9400,57 @@ aside > .region {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 82, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block h2, aside #block-block-13 h2, #block-block-12 h2 {
+/* line 85, ../sass/_aside.scss */
+aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   display: none;
 }
-/* line 88, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block tr td:first-child, aside #block-block-13 tr td:first-child, #block-block-12 tr td:first-child {
-  color: #162b4a;
-  font-size: 16px;
+
+/* xchange */
+/* line 91, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block {
+  background: #FFF;
+  border: 1px #CCC solid;
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-top: -15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
-/* line 93, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block tr.naranja, aside #block-block-13 tr.naranja, #block-block-12 tr.naranja {
+/* line 100, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block h2 {
+  display: none;
+}
+/* line 106, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block tr td:first-child {
+  color: #162b4a;
+  font-size: 14px;
+}
+/* line 111, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block tr.naranja {
   color: #f97431;
   height: 40px;
 }
-/* line 97, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block tr.naranja td:first-child, aside #block-block-13 tr.naranja td:first-child, #block-block-12 tr.naranja td:first-child {
+/* line 115, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block tr.naranja td:first-child {
   color: #f97431;
 }
-/* line 103, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block td, .view.view-indices.view-id-indices.view-display-id-block th, aside #block-block-13 td, aside #block-block-13 th, #block-block-12 td, #block-block-12 th {
+/* line 121, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block td, .view.view-indices.view-id-indices.view-display-id-block th {
   padding-left: 2px;
   padding-right: 2px;
 }
-/* line 108, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block td.indice, aside #block-block-13 td.indice, #block-block-12 td.indice {
+/* line 126, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block td.indice {
   background: url("../images/index-icons.png") 50% 7px no-repeat;
   text-indent: -9999px;
 }
-/* line 112, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block td.indice.i_down, aside #block-block-13 td.indice.i_down, #block-block-12 td.indice.i_down {
+/* line 130, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block td.indice.i_down {
   background-position: 50% -41px;
 }
-/* line 116, ../sass/_aside.scss */
-.view.view-indices.view-id-indices.view-display-id-block td.indice.i_up, aside #block-block-13 td.indice.i_up, #block-block-12 td.indice.i_up {
+/* line 134, ../sass/_aside.scss */
+.view.view-indices.view-id-indices.view-display-id-block td.indice.i_up {
   background-position: 50% -15px;
 }
 
@@ -9437,7 +9459,7 @@ aside > .region {
 /* line 4, ../sass/_views.scss */
 .contenedor {
   overflow: hidden;
-  padding-bottom: 2px;
+  padding-bottom: -6px;
 }
 @media (min-width: 720px) {
   /* line 4, ../sass/_views.scss */
@@ -10383,7 +10405,7 @@ aside {
 /* line 78, ../sass/styles.scss */
 #page-header {
   border: 1px #CECECE solid;
-  margin-bottom: 1h0px;
+  margin-bottom: 10px;
   overflow: hidden;
   padding: 10px;
 }
@@ -10479,4 +10501,10 @@ aside {
 /* line 167, ../sass/styles.scss */
 .view.view-home.view-id-home.view-display-id-page {
   margin-top: -15px;
+}
+
+/* sobre escribo el margen inferior del nav para disminuir espacios */
+/* line 172, ../sass/styles.scss */
+.navbar {
+  margin-bottom: 5px;
 }

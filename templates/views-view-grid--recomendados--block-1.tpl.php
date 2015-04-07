@@ -11,7 +11,7 @@
  */
 ?>
 
-  <table><tr class="subrayado"><td class="subrayado"><h3>Other Reports that may be on your interest</h3></td><td class="subrayadito"></td></tr></table>
+ 
 
 <table class="<?php print $class; ?>"<?php print $attributes; ?>>
   <?php if (!empty($caption)) : ?>

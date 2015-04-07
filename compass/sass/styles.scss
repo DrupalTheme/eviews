@@ -97,9 +97,14 @@ aside {
 
 
 
-/* full page market, report*/
+/* full page market */
 .panels-flexible-2 .panels-flexible-row {
-  padding-bottom: 40px;
+  padding-top: 4px;
+}
+
+/* full page market, report*/
+.panels-flexible-row.panels-flexible-row-2-1 {
+  padding-bottom: 4px;
 }
 
 .node-type-reports .categoria table,
@@ -176,4 +181,9 @@ aside {
   margin-bottom: 5px;
 }
 
+
+/* titulo de listado de teasers h3 */
+.node-teaser h3 a {
+  font-size: 20px;
+}
 

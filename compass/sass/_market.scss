@@ -1,5 +1,10 @@
 /* Mercado Page Style */
 
+.panels-flexible-row.panels-flexible-row-first.clearfix.titulo, .panels-flexible-row.panels-flexible-row-2-7.panels-flexible-row-first.clearfix.titulo {
+  padding-right: 0px;
+  padding-top: 20px;
+}
+
 .panels-flexible-column-18-3,
 .panels-flexible-column-18-4 {
   clear: both;
@@ -9,8 +14,8 @@
   width: 100%;
 
   #search-block-form .input-group {
-    float: none;
-    width: 100%;
+ /*   float: none;
+    width: 100%; */
   }
 
   @include breakpoint(720px) {
@@ -50,10 +55,11 @@
 #back-to-category,
 .back-to-category {
   h2 {
-    color: #000;
+    color: #ccc;
     display: inline;
     float: left;
     margin: 0;
+    font-size: 12px;
   }
   .pane-content {
     display: inline-block;
@@ -63,11 +69,12 @@
     padding-left: 5px;
 
     a {
-      color: #000;
+      color: #ccc;
 
       &:hover {
         color: #333;
         text-decoration: none;
+       
       }
     }
   }

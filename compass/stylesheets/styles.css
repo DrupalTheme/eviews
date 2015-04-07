@@ -9743,7 +9743,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 .view-articulos .node,
 .view-informes .node,
 .view-mercados .node {
-  padding-bottom: 20px;
+  padding-bottom: 2px;
 }
 /* line 257, ../sass/_views.scss */
 .view-prensa .node h2,
@@ -9853,6 +9853,12 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 
 /* Mercado Page Style */
 /* line 3, ../sass/_market.scss */
+.panels-flexible-row.panels-flexible-row-first.clearfix.titulo, .panels-flexible-row.panels-flexible-row-2-7.panels-flexible-row-first.clearfix.titulo {
+  padding-right: 0px;
+  padding-top: 20px;
+}
+
+/* line 8, ../sass/_market.scss */
 .panels-flexible-column-18-3,
 .panels-flexible-column-18-4 {
   clear: both;
@@ -9861,14 +9867,14 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   margin: 0 auto;
   width: 100%;
 }
-/* line 11, ../sass/_market.scss */
+/* line 16, ../sass/_market.scss */
 .panels-flexible-column-18-3 #search-block-form .input-group,
 .panels-flexible-column-18-4 #search-block-form .input-group {
-  float: none;
-  width: 100%;
+  /*   float: none;
+     width: 100%; */
 }
 @media (min-width: 720px) {
-  /* line 3, ../sass/_market.scss */
+  /* line 8, ../sass/_market.scss */
   .panels-flexible-column-18-3,
   .panels-flexible-column-18-4 {
     clear: none;
@@ -9879,12 +9885,12 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 }
 
 /* Internal Search form */
-/* line 26, ../sass/_market.scss */
+/* line 31, ../sass/_market.scss */
 #search-block-form .input-group {
   display: inline-block;
   float: right;
 }
-/* line 31, ../sass/_market.scss */
+/* line 36, ../sass/_market.scss */
 #search-block-form .form-text {
   border: 2px #979797 solid;
   color: #AAA;
@@ -9895,20 +9901,21 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 41, ../sass/_market.scss */
+/* line 46, ../sass/_market.scss */
 #search-block-form #edit-submi, #search-block-form .input-group-btn {
   display: none;
 }
 
-/* line 52, ../sass/_market.scss */
+/* line 57, ../sass/_market.scss */
 #back-to-category h2,
 .back-to-category h2 {
-  color: #000;
+  color: #ccc;
   display: inline;
   float: left;
   margin: 0;
+  font-size: 12px;
 }
-/* line 58, ../sass/_market.scss */
+/* line 64, ../sass/_market.scss */
 #back-to-category .pane-content,
 .back-to-category .pane-content {
   display: inline-block;
@@ -9917,56 +9924,56 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   float: left;
   padding-left: 5px;
 }
-/* line 65, ../sass/_market.scss */
+/* line 71, ../sass/_market.scss */
 #back-to-category .pane-content a,
 .back-to-category .pane-content a {
-  color: #000;
+  color: #ccc;
 }
-/* line 68, ../sass/_market.scss */
+/* line 74, ../sass/_market.scss */
 #back-to-category .pane-content a:hover,
 .back-to-category .pane-content a:hover {
   color: #333;
   text-decoration: none;
 }
-/* line 74, ../sass/_market.scss */
+/* line 81, ../sass/_market.scss */
 #back-to-category .field-label,
 .back-to-category .field-label {
   display: none;
 }
 
-/* line 80, ../sass/_market.scss */
+/* line 87, ../sass/_market.scss */
 .pane-node-title h3 {
   color: #000;
   font-weight: 500;
 }
 
-/* line 86, ../sass/_market.scss */
+/* line 93, ../sass/_market.scss */
 .pane-node-body {
   color: #666;
   font-size: 16px;
 }
-/* line 90, ../sass/_market.scss */
+/* line 97, ../sass/_market.scss */
 .pane-node-body p {
   margin-bottom: 20px;
 }
 
-/* line 95, ../sass/_market.scss */
+/* line 102, ../sass/_market.scss */
 .node-type-markets .pane-2 a {
   font-size: 25px;
   padding: 5px 15px;
 }
-/* line 99, ../sass/_market.scss */
+/* line 106, ../sass/_market.scss */
 .node-type-markets .pane-2 a:hover {
   text-decoration: none;
 }
 
-/* line 104, ../sass/_market.scss */
+/* line 111, ../sass/_market.scss */
 .pane-node-created {
   color: #f09100;
   margin-bottom: 10px;
 }
 
-/* line 109, ../sass/_market.scss */
+/* line 116, ../sass/_market.scss */
 .not-logged-in .field-name-field-pdf a,
 .page-node #pdf-size .file {
   font-size: 18px;
@@ -9975,41 +9982,41 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 116, ../sass/_market.scss */
+/* line 123, ../sass/_market.scss */
 .not-logged-in .field-name-field-pdf a img, .not-logged-in .field-name-field-pdf a span,
 .page-node #pdf-size .file img,
 .page-node #pdf-size .file span {
   display: none;
 }
-/* line 120, ../sass/_market.scss */
+/* line 127, ../sass/_market.scss */
 .not-logged-in .field-name-field-pdf a a,
 .page-node #pdf-size .file a {
   color: #FFF;
 }
-/* line 123, ../sass/_market.scss */
+/* line 130, ../sass/_market.scss */
 .not-logged-in .field-name-field-pdf a a:hover,
 .page-node #pdf-size .file a:hover {
   text-decoration: none;
 }
 
-/* line 129, ../sass/_market.scss */
+/* line 136, ../sass/_market.scss */
 .node-type-press #press-link a {
   color: #FFF;
 }
-/* line 132, ../sass/_market.scss */
+/* line 139, ../sass/_market.scss */
 .node-type-press #press-link a:hover {
   color: #FFF;
 }
 
 @media (min-width: 720px) {
-  /* line 138, ../sass/_market.scss */
+  /* line 145, ../sass/_market.scss */
   .pane-node-field-image {
     float: left;
     margin-right: 25px;
     /*@include grid-span(2, 1);*/
   }
 
-  /* line 145, ../sass/_market.scss */
+  /* line 152, ../sass/_market.scss */
   .node-type-press #press-link,
   .pane-node-created,
   .node-type-markets .pane-2,
@@ -10018,32 +10025,32 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   }
 
   /* Report pages */
-  /* line 159, ../sass/_market.scss */
+  /* line 166, ../sass/_market.scss */
   #mini-panel-fecha_trimestral,
   #mini-panel-fecha {
     color: #f09100;
     height: 25px;
     margin-left: 430px;
   }
-  /* line 165, ../sass/_market.scss */
+  /* line 172, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .panels-flexible-region,
   #mini-panel-fecha .panels-flexible-region {
     width: 100% !important;
   }
-  /* line 169, ../sass/_market.scss */
+  /* line 176, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .panel-separator,
   #mini-panel-fecha .panel-separator {
     border: 1px #e00 solid;
     display: none;
   }
-  /* line 174, ../sass/_market.scss */
+  /* line 181, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .pane-node-field-trimestre,
   #mini-panel-fecha_trimestral .pane-node-field-semana-id,
   #mini-panel-fecha .pane-node-field-trimestre,
   #mini-panel-fecha .pane-node-field-semana-id {
     float: left;
   }
-  /* line 179, ../sass/_market.scss */
+  /* line 186, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .pane-node-created,
   #mini-panel-fecha .pane-node-created {
     float: left;
@@ -10432,18 +10439,24 @@ aside {
   padding-top: 10px;
 }
 
-/* full page market, report*/
+/* full page market */
 /* line 101, ../sass/styles.scss */
 .panels-flexible-2 .panels-flexible-row {
-  padding-bottom: 40px;
+  padding-top: 4px;
 }
 
-/* line 105, ../sass/styles.scss */
+/* full page market, report*/
+/* line 106, ../sass/styles.scss */
+.panels-flexible-row.panels-flexible-row-2-1 {
+  padding-bottom: 4px;
+}
+
+/* line 110, ../sass/styles.scss */
 .node-type-reports .categoria table,
 .panels-flexible-region-2-categoria table {
   width: 100%;
 }
-/* line 109, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .node-type-reports .categoria table h2,
 .panels-flexible-region-2-categoria table h2 {
   font-size: 25px !important;
@@ -10451,7 +10464,7 @@ aside {
   margin: 0;
   border-bottom: 1px #f57c14 solid;
 }
-/* line 115, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .node-type-reports .categoria table h2 span,
 .panels-flexible-region-2-categoria table h2 span {
   border-bottom: 4px #FF6600 solid;
@@ -10460,12 +10473,12 @@ aside {
   padding-right: 100px;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .view-header {
   height: auto;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .orange-header {
   border-bottom: 1px #f57c14 solid;
   color: #f57c14;
@@ -10473,14 +10486,14 @@ aside {
   line-height: 35px;
   margin-bottom: 20px;
 }
-/* line 135, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .orange-header span {
   border-bottom: 4px #FF6600 solid;
   padding-right: 100px;
 }
 
 /* frontage recomended */
-/* line 142, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 #block-views-recomendados-block-2 .well {
   border-color: #CCC;
   box-shadow: none;
@@ -10490,32 +10503,38 @@ aside {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 147, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 #block-views-recomendados-block-2 .well td.col-3.col-last {
   padding-left: 10px;
 }
 
 /* view sample in services */
-/* line 156, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .view-sample a {
   display: inline-block;
   padding: 2px 10px !important;
   width: auto;
   color: white;
 }
-/* line 163, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 .view-sample a:hover {
   text-decoration: none;
 }
 
 /* subo el contenedor de la home */
-/* line 170, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .view.view-home.view-id-home.view-display-id-page {
   margin-top: -15px;
 }
 
 /* sobre escribo el margen inferior del nav para disminuir espacios */
-/* line 175, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .navbar {
   margin-bottom: 5px;
+}
+
+/* titulo de listado de teasers h3 */
+/* line 186, ../sass/styles.scss */
+.node-teaser h3 a {
+  font-size: 20px;
 }

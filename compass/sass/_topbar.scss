@@ -74,8 +74,8 @@
 
   .register-help {
     clear: both;
-    font-size: 13.5px;
-    padding:10px 0 5px;
+    font-size: 12px;
+    padding:8px 0 5px;
   }
 
   .form-item {
@@ -87,11 +87,12 @@
     }
 
     label {
-      display: none;
+     /* display: none;*/
       color: #AAA;
       top: 7px;
       font-weight: 100;
       font-size: 15px;
+      left: 5px;
     }
 
     .form-text {

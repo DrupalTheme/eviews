@@ -8637,7 +8637,7 @@ aside > .region {
 /* CSS3 Buttons */
 /* line 2, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a,
-.node-type-press #press-link,
+.node-type-press #press-link, .view-sample a,
 #block-block-6 a.btn,
 #block-block-10 a.btn,
 .field-type-file .file,
@@ -8674,7 +8674,7 @@ button.cupid-green {
 }
 /* line 33, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:hover,
-.node-type-press #press-link:hover,
+.node-type-press #press-link:hover, .view-sample a:hover,
 #block-block-6 a.btn:hover,
 #block-block-10 a.btn:hover,
 .field-type-file .file:hover,
@@ -8692,7 +8692,7 @@ button.cupid-green:hover {
 }
 /* line 39, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:active,
-.node-type-press #press-link:active,
+.node-type-press #press-link:active, .view-sample a:active,
 #block-block-6 a.btn:active,
 #block-block-10 a.btn:active,
 .field-type-file .file:active,
@@ -9247,8 +9247,8 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 #page-header #clientes .register-help,
 #block-user-login .register-help {
   clear: both;
-  font-size: 13.5px;
-  padding: 10px 0 5px;
+  font-size: 12px;
+  padding: 8px 0 5px;
 }
 /* line 81, ../sass/_topbar.scss */
 #page-header #clientes .form-item,
@@ -9264,27 +9264,28 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 /* line 89, ../sass/_topbar.scss */
 #page-header #clientes .form-item label,
 #block-user-login .form-item label {
-  display: none;
+  /* display: none;*/
   color: #AAA;
   top: 7px;
   font-weight: 100;
   font-size: 15px;
+  left: 5px;
 }
-/* line 97, ../sass/_topbar.scss */
+/* line 98, ../sass/_topbar.scss */
 #page-header #clientes .form-item .form-text,
 #block-user-login .form-item .form-text {
   color: #AAA;
   font-weight: 100;
   font-size: 15px;
 }
-/* line 104, ../sass/_topbar.scss */
+/* line 105, ../sass/_topbar.scss */
 #page-header #clientes .form-submit,
 #block-user-login .form-submit {
   clear: both;
   color: #FFF;
   width: 100%;
 }
-/* line 110, ../sass/_topbar.scss */
+/* line 111, ../sass/_topbar.scss */
 #page-header #clientes .login-pass,
 #block-user-login .login-pass {
   font-size: 12px;
@@ -9293,12 +9294,12 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 }
 
 /* DB logged users */
-/* line 118, ../sass/_topbar.scss */
+/* line 119, ../sass/_topbar.scss */
 #block-block-6,
 #block-block-10 {
   text-align: center;
 }
-/* line 123, ../sass/_topbar.scss */
+/* line 124, ../sass/_topbar.scss */
 #block-block-6 a.btn:hover,
 #block-block-10 a.btn:hover {
   color: #FFF;
@@ -10058,13 +10059,13 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 /* line 6, ../sass/_staff.scss */
 .staff-item h2 {
   color: #000;
-  font-size: 26px !important;
+  font-size: 24px !important;
   margin: 0 0 20px;
 }
 /* line 12, ../sass/_staff.scss */
 .staff-item h3 {
   color: #f60;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   font-weight: 100;
   margin: 10px 0 20px;
@@ -10087,6 +10088,12 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
     left: 0;
   }
 }
+/*icono twitter */
+/* line 39, ../sass/_staff.scss */
+img.twitter_ico {
+  left: 520px;
+}
+
 /* Contact Page */
 /* line 3, ../sass/_contactpage.scss */
 .page-node-25 {
@@ -10483,28 +10490,32 @@ aside {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
+/* line 147, ../sass/styles.scss */
+#block-views-recomendados-block-2 .well td.col-3.col-last {
+  padding-left: 10px;
+}
 
 /* view sample in services */
-/* line 153, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 .view-sample a {
   display: inline-block;
   padding: 2px 10px !important;
   width: auto;
   color: white;
 }
-/* line 160, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .view-sample a:hover {
   text-decoration: none;
 }
 
 /* subo el contenedor de la home */
-/* line 167, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .view.view-home.view-id-home.view-display-id-page {
   margin-top: -15px;
 }
 
 /* sobre escribo el margen inferior del nav para disminuir espacios */
-/* line 172, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .navbar {
   margin-bottom: 5px;
 }

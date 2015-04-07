@@ -144,6 +144,9 @@ aside {
   box-shadow: none;
   margin-bottom: 0;
   margin-top: 20px;
+	td.col-3.col-last {
+	  padding-left: 10px;
+	}
 
   @include border-radius(8px); 
 }

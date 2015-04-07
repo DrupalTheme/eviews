@@ -167,17 +167,17 @@ if (diffipc_premise > 0) {
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">
-				Dólar</td>
+				<?php print t('Dollar');?></td>
 			<td width="20%">
 				<?php echo date('d-M');?></td>
 			<td width="20%">
-				a/a</td>
+				<?php print t('y/y');?></td>
 			<td width="10%">
 				&nbsp;</td>
 		</tr>
 		<tr id=tr_dolar_oficial">
 			<td>
-				Oficial</td>
+				<?php print t('Official');?></td>
 			<td id="oficial">
 				<?php print $view->field['field_dolar_oficial']->advanced_render($row);?> </td>
 			<td id="oficial_anterior">
@@ -187,7 +187,7 @@ if (diffipc_premise > 0) {
 		</tr>
 		<tr>
 			<td>
-				Informal</td>
+				<?php print t('Parallel');?></td>
 			<td id="informal">
 				<?php print $view->field['field_dolar_informal']->advanced_render($row); ?></td>
 			<td id="informal_anterior">
@@ -197,7 +197,7 @@ if (diffipc_premise > 0) {
 		</tr>
 		<tr>
 			<td>
-				Contado con liqui</td>
+				<?php print t('Blue chip');?></td>
 			<td id="ccl">
 				<?php print $view->field['field_contado_con_liqui']->advanced_render($row); ?></td>
 			<td id="ccl_anterior">
@@ -211,17 +211,17 @@ if (diffipc_premise > 0) {
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">
-				Inflación&nbsp;&nbsp;</td>
+				<?php print t('Inflation');?></td>
 			<td width="20%">
-				m/m</td>
+				<?php print t('m/m');?></td>
 			<td width="20%">
-				a/a</td>
+				<?php print t('y/y');?></td>
 			<td width="10%">
 				&nbsp;</td>
 		</tr>
 		<tr>
 			<td>
-				IPCnu</td>
+				<?php print t('CPInu');?></td>
 			<td id="ipcnu">
 				<?php print $view->field['field_ipcnu']->advanced_render($row); ?></td>
 			<td id="ipcnu_anterior">
@@ -231,7 +231,7 @@ if (diffipc_premise > 0) {
 		</tr>
 		<tr>
 			<td>
-				IPC Congreso</td>
+				<?php print t('Congress CPI');?></td>
 			<td id="ipc_congreso">
 				<?php print $view->field['field_ipc_congreso']->advanced_render($row); ?></td>
 			<td id="ipc_congreso_anterior">
@@ -241,7 +241,7 @@ if (diffipc_premise > 0) {
 		</tr>
 		<tr>
 			<td>
-				IPC Premise</td>
+				<?php print t('Premise CPI');?></td>
 			<td id="ipc_premise">
 				<?php print $view->field['field_ipc_premise']->advanced_render($row); ?></td>
 			<td id="ipc_premise_anterior">

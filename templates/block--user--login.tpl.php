@@ -16,7 +16,7 @@
      $output = '<div id="clientes"><div><h3 class="clientes">' . t('Clients') . '</h3> ';
  //    $output .= '<a href="user/register" class="user-register btn b">'. t('Register') . '</a></div>';
     $output .= l(t('Register'),'user/register', array('attributes'=>array('class'=>'user-register btn b')));
-     $output .= '<div class="register-help">' . t('Access to reports, databases and projections') . '</div>';    
+     $output .= '<div class="register-help">' . t('Access to reports, databases and estimates') . '</div>';    
     
     $rendered = drupal_render($elements);
     // to see what you have to work with

@@ -77,7 +77,7 @@ aside {
 
 #page-header {
   border: 1px #CECECE solid;
-  margin-bottom: 20px;
+  margin-bottom: 1h0px;
   overflow: hidden;
   padding: 10px;
 }
@@ -148,3 +148,22 @@ aside {
   @include border-radius(8px); 
 }
 
+
+/* view sample in services */
+.view-sample a {
+      display: inline-block;
+  
+      padding: 2px 10px !important;
+      width: auto;
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+      }      
+    }   
+
+
+/* subo el contenedor de la home */
+.view.view-home.view-id-home.view-display-id-page {
+  margin-top: -15px;
+}

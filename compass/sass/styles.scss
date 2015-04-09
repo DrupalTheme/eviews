@@ -40,7 +40,10 @@ img {
 .page-taxonomy-term,
 .node-type-article,
 .node-type-reports,
-.node-type-markets {
+.node-type-press-reports,
+.node-type-markets 
+  h1.page-header,
+.page-icf-press-reports {
   h1.page-header {
     display: none;
   }

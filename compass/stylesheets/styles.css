@@ -9697,14 +9697,15 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
     margin-left: 240px;
   }
 
-  /* line 243, ../sass/_views.scss */
+  /* line 244, ../sass/_views.scss */
   .view-prensa .field-type-image,
   .view-articulos .field-type-image,
   .view-informes .field-type-image,
+  .view-press-reports .field-type-image,
   .view-mercados .field-type-image {
     float: left;
   }
-  /* line 247, ../sass/_views.scss */
+  /* line 248, ../sass/_views.scss */
   .view-prensa .fecha,
   .view-prensa .cuerpo_reportes,
   .view-prensa .field-name-field-trimestre,
@@ -9729,6 +9730,14 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   .view-informes .field-type-date,
   .view-informes .field-name-body,
   .view-informes .node-readmore,
+  .view-press-reports .fecha,
+  .view-press-reports .cuerpo_reportes,
+  .view-press-reports .field-name-field-trimestre,
+  .view-press-reports .field-name-field-semana-id,
+  .view-press-reports .field-name-title-field,
+  .view-press-reports .field-type-date,
+  .view-press-reports .field-name-body,
+  .view-press-reports .node-readmore,
   .view-mercados .fecha,
   .view-mercados .cuerpo_reportes,
   .view-mercados .field-name-field-trimestre,
@@ -9739,68 +9748,79 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   .view-mercados .node-readmore {
     margin-left: 280px;
   }
-  /* line 258, ../sass/_views.scss */
+  /* line 259, ../sass/_views.scss */
   .view-prensa .cuerpo_reportes,
   .view-articulos .cuerpo_reportes,
   .view-informes .cuerpo_reportes,
+  .view-press-reports .cuerpo_reportes,
   .view-mercados .cuerpo_reportes {
     margin-bottom: 20px;
   }
 }
-/* line 264, ../sass/_views.scss */
+/* line 265, ../sass/_views.scss */
 .view.view-articles-home.view-id-articles_home.view-display-id-page {
   padding-bottom: 20px;
 }
 
 /* view mercados */
-/* line 269, ../sass/_views.scss */
+/* line 270, ../sass/_views.scss */
 .view-prensa .node,
+.view-press-reports .node,
 .view-articulos .node,
 .view-informes .node,
 .view-mercados .node {
   padding-bottom: 2px;
 }
-/* line 274, ../sass/_views.scss */
+/* line 276, ../sass/_views.scss */
 .view-prensa .node h2,
+.view-press-reports .node h2,
 .view-articulos .node h2,
 .view-informes .node h2,
 .view-mercados .node h2 {
   display: none;
 }
-/* line 278, ../sass/_views.scss */
+/* line 280, ../sass/_views.scss */
 .view-prensa .node .field-type-text h2,
+.view-press-reports .node .field-type-text h2,
 .view-articulos .node .field-type-text h2,
 .view-informes .node .field-type-text h2,
 .view-mercados .node .field-type-text h2 {
   display: block;
 }
-/* line 282, ../sass/_views.scss */
+/* line 284, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field,
+.view-press-reports .node .field-name-title-field,
 .view-articulos .node .field-name-title-field,
 .view-informes .node .field-name-title-field,
 .view-mercados .node .field-name-title-field {
   margin-bottom: 20px;
 }
-/* line 285, ../sass/_views.scss */
+/* line 287, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field a,
+.view-press-reports .node .field-name-title-field a,
 .view-articulos .node .field-name-title-field a,
 .view-informes .node .field-name-title-field a,
 .view-mercados .node .field-name-title-field a {
   color: #000;
 }
-/* line 288, ../sass/_views.scss */
+/* line 290, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field a:hover,
+.view-press-reports .node .field-name-title-field a:hover,
 .view-articulos .node .field-name-title-field a:hover,
 .view-informes .node .field-name-title-field a:hover,
 .view-mercados .node .field-name-title-field a:hover {
   color: #333;
   text-decoration: none;
 }
-/* line 295, ../sass/_views.scss */
+/* line 297, ../sass/_views.scss */
 .view-prensa .node .fecha,
 .view-prensa .node .field-name-field-trimestre,
 .view-prensa .node .field-name-field-semana-id,
 .view-prensa .node .field-type-date,
+.view-press-reports .node .fecha,
+.view-press-reports .node .field-name-field-trimestre,
+.view-press-reports .node .field-name-field-semana-id,
+.view-press-reports .node .field-type-date,
 .view-articulos .node .fecha,
 .view-articulos .node .field-name-field-trimestre,
 .view-articulos .node .field-name-field-semana-id,
@@ -9816,9 +9836,11 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   color: #f09100;
   margin-bottom: 10px;
 }
-/* line 303, ../sass/_views.scss */
+/* line 305, ../sass/_views.scss */
 .view-prensa .node .fecha .field-name-field-trimestre,
 .view-prensa .node .fecha .field-name-field-semana-id,
+.view-press-reports .node .fecha .field-name-field-trimestre,
+.view-press-reports .node .fecha .field-name-field-semana-id,
 .view-articulos .node .fecha .field-name-field-trimestre,
 .view-articulos .node .fecha .field-name-field-semana-id,
 .view-informes .node .fecha .field-name-field-trimestre,
@@ -9829,41 +9851,52 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   float: left;
   margin: 0 0.5em 0 0;
 }
-/* line 311, ../sass/_views.scss */
+/* line 313, ../sass/_views.scss */
 .view-prensa .node .field-name-body,
+.view-press-reports .node .field-name-body,
 .view-articulos .node .field-name-body,
 .view-informes .node .field-name-body,
 .view-mercados .node .field-name-body {
   font-size: 15px;
   margin-bottom: 30px;
 }
-/* line 316, ../sass/_views.scss */
+/* line 318, ../sass/_views.scss */
 .view-prensa .node ul.links,
+.view-press-reports .node ul.links,
 .view-articulos .node ul.links,
 .view-informes .node ul.links,
 .view-mercados .node ul.links {
   text-align: right;
 }
-/* line 319, ../sass/_views.scss */
+/* line 321, ../sass/_views.scss */
 .view-prensa .node .node-readmore,
+.view-press-reports .node .node-readmore,
 .view-articulos .node .node-readmore,
 .view-informes .node .node-readmore,
 .view-mercados .node .node-readmore {
   text-align: right;
 }
-/* line 322, ../sass/_views.scss */
+/* line 324, ../sass/_views.scss */
 .view-prensa .node .node-readmore a,
+.view-press-reports .node .node-readmore a,
 .view-articulos .node .node-readmore a,
 .view-informes .node .node-readmore a,
 .view-mercados .node .node-readmore a {
   padding: 2px 15px;
 }
-/* line 325, ../sass/_views.scss */
+/* line 327, ../sass/_views.scss */
 .view-prensa .node .node-readmore a:hover,
+.view-press-reports .node .node-readmore a:hover,
 .view-articulos .node .node-readmore a:hover,
 .view-informes .node .node-readmore a:hover,
 .view-mercados .node .node-readmore a:hover {
   text-decoration: none;
+}
+
+/* Markets  */
+/* line 337, ../sass/_views.scss */
+.view.view-mercados.view-id-mercados.view-display-id-page {
+  padding-bottom: 20px;
 }
 
 /* Mercado Page Style */
@@ -10390,7 +10423,7 @@ img {
   display: none;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 .node-type-press h1.page-header,
 .page-base-de-datos h1.page-header,
 .page-node-25 h1.page-header,
@@ -10399,38 +10432,41 @@ img {
 .page-taxonomy-term h1.page-header,
 .node-type-article h1.page-header,
 .node-type-reports h1.page-header,
-.node-type-markets h1.page-header {
+.node-type-press-reports h1.page-header,
+.node-type-markets
+h1.page-header h1.page-header,
+.page-icf-press-reports h1.page-header {
   display: none;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 h1.orange-header {
   padding-bottom: 5px;
   font-size: 24 !important;
   position: relative;
 }
-/* line 54, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 h1.orange-header span {
   bottom: 0;
   left: 0;
   position: absolute;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 .field-type-file .file, .views-field-field-base .file {
   font-size: 20px;
   padding: 8px 15px;
 }
-/* line 65, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 .field-type-file .file a, .views-field-field-base .file a {
   color: #FFF;
 }
-/* line 67, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .field-type-file .file a:hover, .views-field-field-base .file a:hover {
   text-decoration: none;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 #page-header,
 aside {
   -moz-border-radius: 5px;
@@ -10438,7 +10474,7 @@ aside {
   border-radius: 5px;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 #page-header {
   border: 1px #CECECE solid;
   margin-bottom: 10px;
@@ -10446,13 +10482,13 @@ aside {
   padding: 10px;
 }
 
-/* line 85, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 #footer-wrapper {
   border-top: 1px #f97431 solid;
   margin-top: 20px;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 .footer {
   border: none;
   margin-bottom: 20px;
@@ -10462,23 +10498,23 @@ aside {
 }
 
 /* full page market */
-/* line 101, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .panels-flexible-2 .panels-flexible-row {
   padding-top: 4px;
 }
 
 /* full page market, report*/
-/* line 106, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .panels-flexible-row.panels-flexible-row-2-1 {
   padding-bottom: 4px;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .node-type-reports .categoria table,
 .panels-flexible-region-2-categoria table {
   width: 100%;
 }
-/* line 114, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .node-type-reports .categoria table h2,
 .panels-flexible-region-2-categoria table h2 {
   font-size: 25px !important;
@@ -10486,7 +10522,7 @@ aside {
   margin: 0;
   border-bottom: 1px #f57c14 solid;
 }
-/* line 120, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .node-type-reports .categoria table h2 span,
 .panels-flexible-region-2-categoria table h2 span {
   border-bottom: 4px #FF6600 solid;
@@ -10495,12 +10531,12 @@ aside {
   padding-right: 100px;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .view-header {
   height: auto;
 }
 
-/* line 133, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .orange-header {
   border-bottom: 1px #f57c14 solid;
   color: #f57c14;
@@ -10508,14 +10544,14 @@ aside {
   line-height: 35px;
   margin-bottom: 20px;
 }
-/* line 140, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .orange-header span {
   border-bottom: 6px #FF6600 solid;
   padding-right: 100px;
 }
 
 /* frontage recomended */
-/* line 147, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 #block-views-recomendados-block-2 .well {
   border-color: #CCC;
   box-shadow: none;
@@ -10525,38 +10561,38 @@ aside {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 152, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 #block-views-recomendados-block-2 .well td.col-3.col-last {
   padding-left: 10px;
 }
 
 /* view sample in services */
-/* line 161, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .view-sample a {
   display: inline-block;
   padding: 2px 10px !important;
   width: auto;
   color: white;
 }
-/* line 168, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .view-sample a:hover {
   text-decoration: none;
 }
 
 /* subo el contenedor de la home */
-/* line 175, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .view.view-home.view-id-home.view-display-id-page {
   margin-top: -15px;
 }
 
 /* sobre escribo el margen inferior del nav para disminuir espacios */
-/* line 180, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .navbar {
   margin-bottom: 5px;
 }
 
 /* titulo de listado de teasers h3 */
-/* line 186, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .node-teaser h3 a {
   font-size: 20px;
 }

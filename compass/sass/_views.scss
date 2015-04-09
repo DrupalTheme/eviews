@@ -238,6 +238,7 @@
   .view-prensa,
   .view-articulos,
   .view-informes,
+  .view-press-reports,
   .view-mercados {
     
     .field-type-image {
@@ -267,6 +268,7 @@
 
 /* view mercados */
 .view-prensa .node,
+.view-press-reports .node,
 .view-articulos .node,
 .view-informes .node,
 .view-mercados .node {
@@ -327,4 +329,11 @@
       }
     }
   }
+}
+
+
+/* Markets  */
+
+.view.view-mercados.view-id-mercados.view-display-id-page {
+  padding-bottom: 20px;
 }

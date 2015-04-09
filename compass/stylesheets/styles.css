@@ -9658,7 +9658,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 /* line 192, ../sass/_views.scss */
 .pane-views-recomendados-block-1 h3 {
   margin-bottom: 30px;
-  font-size: 21px !important;
+  font-size: 19px !important;
 }
 /* line 196, ../sass/_views.scss */
 .pane-views-recomendados-block-1 h3 a {
@@ -9747,43 +9747,48 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
     margin-bottom: 20px;
   }
 }
+/* line 264, ../sass/_views.scss */
+.view.view-articles-home.view-id-articles_home.view-display-id-page {
+  padding-bottom: 20px;
+}
+
 /* view mercados */
-/* line 265, ../sass/_views.scss */
+/* line 269, ../sass/_views.scss */
 .view-prensa .node,
 .view-articulos .node,
 .view-informes .node,
 .view-mercados .node {
   padding-bottom: 2px;
 }
-/* line 270, ../sass/_views.scss */
+/* line 274, ../sass/_views.scss */
 .view-prensa .node h2,
 .view-articulos .node h2,
 .view-informes .node h2,
 .view-mercados .node h2 {
   display: none;
 }
-/* line 274, ../sass/_views.scss */
+/* line 278, ../sass/_views.scss */
 .view-prensa .node .field-type-text h2,
 .view-articulos .node .field-type-text h2,
 .view-informes .node .field-type-text h2,
 .view-mercados .node .field-type-text h2 {
   display: block;
 }
-/* line 278, ../sass/_views.scss */
+/* line 282, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field,
 .view-articulos .node .field-name-title-field,
 .view-informes .node .field-name-title-field,
 .view-mercados .node .field-name-title-field {
   margin-bottom: 20px;
 }
-/* line 281, ../sass/_views.scss */
+/* line 285, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field a,
 .view-articulos .node .field-name-title-field a,
 .view-informes .node .field-name-title-field a,
 .view-mercados .node .field-name-title-field a {
   color: #000;
 }
-/* line 284, ../sass/_views.scss */
+/* line 288, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field a:hover,
 .view-articulos .node .field-name-title-field a:hover,
 .view-informes .node .field-name-title-field a:hover,
@@ -9791,7 +9796,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   color: #333;
   text-decoration: none;
 }
-/* line 291, ../sass/_views.scss */
+/* line 295, ../sass/_views.scss */
 .view-prensa .node .fecha,
 .view-prensa .node .field-name-field-trimestre,
 .view-prensa .node .field-name-field-semana-id,
@@ -9811,7 +9816,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   color: #f09100;
   margin-bottom: 10px;
 }
-/* line 299, ../sass/_views.scss */
+/* line 303, ../sass/_views.scss */
 .view-prensa .node .fecha .field-name-field-trimestre,
 .view-prensa .node .fecha .field-name-field-semana-id,
 .view-articulos .node .fecha .field-name-field-trimestre,
@@ -9824,7 +9829,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   float: left;
   margin: 0 0.5em 0 0;
 }
-/* line 307, ../sass/_views.scss */
+/* line 311, ../sass/_views.scss */
 .view-prensa .node .field-name-body,
 .view-articulos .node .field-name-body,
 .view-informes .node .field-name-body,
@@ -9832,28 +9837,28 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   font-size: 15px;
   margin-bottom: 30px;
 }
-/* line 312, ../sass/_views.scss */
+/* line 316, ../sass/_views.scss */
 .view-prensa .node ul.links,
 .view-articulos .node ul.links,
 .view-informes .node ul.links,
 .view-mercados .node ul.links {
   text-align: right;
 }
-/* line 315, ../sass/_views.scss */
+/* line 319, ../sass/_views.scss */
 .view-prensa .node .node-readmore,
 .view-articulos .node .node-readmore,
 .view-informes .node .node-readmore,
 .view-mercados .node .node-readmore {
   text-align: right;
 }
-/* line 318, ../sass/_views.scss */
+/* line 322, ../sass/_views.scss */
 .view-prensa .node .node-readmore a,
 .view-articulos .node .node-readmore a,
 .view-informes .node .node-readmore a,
 .view-mercados .node .node-readmore a {
   padding: 2px 15px;
 }
-/* line 321, ../sass/_views.scss */
+/* line 325, ../sass/_views.scss */
 .view-prensa .node .node-readmore a:hover,
 .view-articulos .node .node-readmore a:hover,
 .view-informes .node .node-readmore a:hover,

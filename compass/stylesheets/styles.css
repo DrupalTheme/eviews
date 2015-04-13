@@ -9899,6 +9899,15 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   padding-bottom: 20px;
 }
 
+/* academics */
+/* line 343, ../sass/_views.scss */
+.view-articulos.view-id-articulos .read-more a {
+  display: inline-block;
+  float: right;
+  padding: 2px 10px !important;
+  width: auto;
+}
+
 /* Mercado Page Style */
 /* line 3, ../sass/_market.scss */
 .panels-flexible-row.panels-flexible-row-first.clearfix.titulo, .panels-flexible-row.panels-flexible-row-2-7.panels-flexible-row-first.clearfix.titulo {

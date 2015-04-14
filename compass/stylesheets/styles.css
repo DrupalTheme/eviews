@@ -8640,7 +8640,7 @@ aside > .region {
 .node-type-press #press-link, .view-sample a,
 #block-block-6 a.btn,
 #block-block-10 a.btn,
-.field-type-file .file,
+.field-type-file span.file,
 .webform-submit,
 .page-node #pdf-size .file,
 .node-readmore a,
@@ -8677,7 +8677,7 @@ button.cupid-green {
 .node-type-press #press-link:hover, .view-sample a:hover,
 #block-block-6 a.btn:hover,
 #block-block-10 a.btn:hover,
-.field-type-file .file:hover,
+.field-type-file span.file:hover,
 .webform-submit:hover,
 .page-node #pdf-size .file:hover,
 .node-readmore a:hover,
@@ -8695,7 +8695,7 @@ button.cupid-green:hover {
 .node-type-press #press-link:active, .view-sample a:active,
 #block-block-6 a.btn:active,
 #block-block-10 a.btn:active,
-.field-type-file .file:active,
+.field-type-file span.file:active,
 .webform-submit:active,
 .page-node #pdf-size .file:active,
 .node-readmore a:active,
@@ -9802,8 +9802,15 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 .view-informes .node .field-name-title-field a,
 .view-mercados .node .field-name-title-field a {
   color: #000;
+  width: 700px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url("assets/xml/ellipsis.xml#ellipsis");
 }
-/* line 290, ../sass/_views.scss */
+/* line 297, ../sass/_views.scss */
 .view-prensa .node .field-name-title-field a:hover,
 .view-press-reports .node .field-name-title-field a:hover,
 .view-articulos .node .field-name-title-field a:hover,
@@ -9812,7 +9819,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   color: #333;
   text-decoration: none;
 }
-/* line 297, ../sass/_views.scss */
+/* line 304, ../sass/_views.scss */
 .view-prensa .node .fecha,
 .view-prensa .node .field-name-field-trimestre,
 .view-prensa .node .field-name-field-semana-id,
@@ -9836,7 +9843,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   color: #f09100;
   margin-bottom: 10px;
 }
-/* line 305, ../sass/_views.scss */
+/* line 312, ../sass/_views.scss */
 .view-prensa .node .fecha .field-name-field-trimestre,
 .view-prensa .node .fecha .field-name-field-semana-id,
 .view-press-reports .node .fecha .field-name-field-trimestre,
@@ -9851,7 +9858,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   float: left;
   margin: 0 0.5em 0 0;
 }
-/* line 313, ../sass/_views.scss */
+/* line 320, ../sass/_views.scss */
 .view-prensa .node .field-name-body,
 .view-press-reports .node .field-name-body,
 .view-articulos .node .field-name-body,
@@ -9860,7 +9867,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
   font-size: 15px;
   margin-bottom: 30px;
 }
-/* line 318, ../sass/_views.scss */
+/* line 325, ../sass/_views.scss */
 .view-prensa .node ul.links,
 .view-press-reports .node ul.links,
 .view-articulos .node ul.links,
@@ -9868,7 +9875,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 .view-mercados .node ul.links {
   text-align: right;
 }
-/* line 321, ../sass/_views.scss */
+/* line 328, ../sass/_views.scss */
 .view-prensa .node .node-readmore,
 .view-press-reports .node .node-readmore,
 .view-articulos .node .node-readmore,
@@ -9876,7 +9883,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 .view-mercados .node .node-readmore {
   text-align: right;
 }
-/* line 324, ../sass/_views.scss */
+/* line 331, ../sass/_views.scss */
 .view-prensa .node .node-readmore a,
 .view-press-reports .node .node-readmore a,
 .view-articulos .node .node-readmore a,
@@ -9884,7 +9891,7 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 .view-mercados .node .node-readmore a {
   padding: 2px 15px;
 }
-/* line 327, ../sass/_views.scss */
+/* line 334, ../sass/_views.scss */
 .view-prensa .node .node-readmore a:hover,
 .view-press-reports .node .node-readmore a:hover,
 .view-articulos .node .node-readmore a:hover,
@@ -9894,14 +9901,51 @@ aside #block-block-13 h2, #block-block-12 h2, #block-block-16 h2 {
 }
 
 /* Markets  */
-/* line 337, ../sass/_views.scss */
+/* line 344, ../sass/_views.scss */
 .view.view-mercados.view-id-mercados.view-display-id-page {
   padding-bottom: 20px;
 }
 
-/* academics */
-/* line 343, ../sass/_views.scss */
-.view-articulos.view-id-articulos .read-more a {
+/* databases  */
+/* line 351, ../sass/_views.scss */
+.view.view-base-de-datos.view-id-base_de_datos .views-field.views-field-title h3 {
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url("assets/xml/ellipsis.xml#ellipsis");
+}
+/* line 364, ../sass/_views.scss */
+.view.view-base-de-datos.view-id-base_de_datos td {
+  padding-left: 50px;
+}
+/* line 368, ../sass/_views.scss */
+.view.view-base-de-datos.view-id-base_de_datos .views-field.views-field-body {
+  margin-bottom: 10px;
+}
+
+/* academics y database */
+/* line 377, ../sass/_views.scss */
+.view-articulos.view-id-articulos .views-field.views-field-title h3.field-content, .view.view-base-de-datos.view-id-base_de_datos .views-field.views-field-title h3.field-content {
+  margin-bottom: 10px;
+}
+/* line 379, ../sass/_views.scss */
+.view-articulos.view-id-articulos .views-field.views-field-title h3.field-content a, .view.view-base-de-datos.view-id-base_de_datos .views-field.views-field-title h3.field-content a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url("assets/xml/ellipsis.xml#ellipsis");
+}
+/* line 391, ../sass/_views.scss */
+.view-articulos.view-id-articulos .read-more a, .view.view-base-de-datos.view-id-base_de_datos .read-more a {
   display: inline-block;
   float: right;
   padding: 2px 10px !important;

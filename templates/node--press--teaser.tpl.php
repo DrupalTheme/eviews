@@ -1,6 +1,9 @@
-<?php //dpm($variables); ?>
+<?php //dpm($variables);
 
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+ $nodo= $node->nid;
+ ?>
+
+<article id="node-<?php print $nodo?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
@@ -13,8 +16,10 @@
 	  hide($content['field_semana_id']);
       //print render($content);
       //hide($content[]);
-      print render($content['field_image']);  
-      print render($content['title_field']);      
+      print render($content['field_image']); 
+      $titulo_truncado = truncate_utf8(strip_tags($node->title_field[$node->language]['0']['value']), 75, False, TRUE,1); 
+      print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="node/' . drupal_get_path_alias($nodo) . '">' . render($titulo_truncado) . '</a></h3></div></div></div>');
+      //print render($content['title_field']);      
  
 
     // if ($display_submitted):    ?>

@@ -22,6 +22,7 @@ aside {
 	h2, .h2 {
 	  font-size: 16px !important;
           margin-top: -3px;
+          text-align: center;
 	}
 }
 
@@ -49,11 +50,14 @@ aside {
 }
 
 .logged-in #simplenews-block-form-1 .form-submit {
-  float: left;
+/*  float: left;
   position: absolute;
   right: 1px;
-  top: 20px;
-  width: 75px
+  top: 20px; */ 
+  width: 50%;
+  margin-bottom: 10px;
+  margin-right: 65px;
+
 }
 
 /* Chart */
@@ -111,6 +115,8 @@ aside #block-block-13, #block-block-12, #block-block-16 {
     &.naranja {
       color: #f97431;
       height: 40px;
+      font-weight: bold;
+
 
       td:first-child {
         color: #f97431;

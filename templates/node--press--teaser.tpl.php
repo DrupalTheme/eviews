@@ -17,8 +17,12 @@
       //print render($content);
       //hide($content[]);
       print render($content['field_image']); 
-      $titulo_truncado = truncate_utf8(strip_tags($node->title_field[$node->language]['0']['value']), 75, False, TRUE,1); 
-      print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="node/' . drupal_get_path_alias($nodo) . '">' . render($titulo_truncado) . '</a></h3></div></div></div>');
+
+    $titulo = field_get_items('node', $node, 'title_field');
+    $titulo_truncado = truncate_utf8(strip_tags($titulo[0]['value']), 77, False, TRUE,1);
+    $path = drupal_lookup_path('alias', "node/".$node->nid); 
+             
+     print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="' . $path . '">' . render($titulo_truncado) . '</a></h3></div></div></div>');
       //print render($content['title_field']);      
  
 
@@ -32,7 +36,8 @@
          ?>
       </div>
 <?php 
-      $cuerpo_truncado = truncate_utf8(strip_tags($node->body[$node->language]['0']['value']), 380, False, TRUE,1);
+     $body = field_get_items('node', $node, 'body');
+    $cuerpo_truncado = truncate_utf8(strip_tags($body[0]['value']), 300, FALSE, TRUE,1);      
       
       print ('<div class="field field-name-body field-type-text-with-summary field-label-hidden">' .  render($cuerpo_truncado) . '</div>');  
      

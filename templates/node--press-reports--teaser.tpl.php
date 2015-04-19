@@ -27,7 +27,8 @@
          ?>
       </div>
 <?php 
-      $cuerpo_truncado = truncate_utf8(strip_tags($node->body[$node->language]['0']['value']), 300, False, TRUE,1);
+    $body = field_get_items('node', $node, 'body');
+    $cuerpo_truncado = truncate_utf8(strip_tags($body[0]['value']), 310, TRUE, TRUE,1);
       
       print ('<div class="field field-name-body field-type-text-with-summary field-label-hidden">' .  render($cuerpo_truncado) . '</div>');  
      

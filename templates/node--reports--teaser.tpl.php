@@ -1,4 +1,20 @@
-<?php //dpm($variables); ?>
+<?php //dpm($variables);
+/**drupal_add_js("jQuery(document).ready(function () 
+{
+ // var original_html = JQuery('.field.field-name-body.field-type-text-with-summary.field-label-hidden').text();
+ // var length = 380;
+ // var truncated_text = JQuery.trim(original_html).substring(0, length).split(" ").slice(0, -1).join(" ") + " ";
+  
+
+});", array(
+  'type' => 'inline',
+  'scope' => 'footer',
+  'group' => JS_THEME,
+  'weight' => 5,
+));
+****/
+
+ ?>
 
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -25,8 +41,16 @@
       //print render($content);
       //hide($content[]);
       print render($content['field_image']);  
-      print render($content['title_field']);      
- 
+//      print render($content['title_field']);      
+
+
+    $titulo = field_get_items('node', $node, 'title_field');
+    $titulo_truncado = truncate_utf8(strip_tags($titulo[0]['value']), 77, False, TRUE,1);
+    $path = drupal_lookup_path('alias', "node/".$node->nid); 
+    
+      
+     print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="' . $path . '">' . render($titulo_truncado) . '</a></h3></div></div></div>');
+
 
     if ($display_submitted):    ?>
     <!--span class="glyphicon glyphicon-calendar" ></span--> 
@@ -65,9 +89,25 @@
       </div>
 <?php endif;
   
-      $cuerpo_truncado = truncate_utf8(strip_tags($node->body[$node->language]['0']['value']), 380, False, TRUE,1);
-      print ('<div class="cuerpo_reportes">' .  render($cuerpo_truncado) . '</div>');  
+      //$cuerpo_truncado = truncate_utf8(strip_tags($node->body[$node->language]['0']['value']), 380, False, TRUE,1);
+    
+    $body = field_get_items('node', $node, 'body');
+//   $teaser = field_view_value('node', $node, 'body', $body[0],'Teaser');
+
+//$object = entity_metadata_wrapper('node', $node);
+//$field = $object->body->value();
+
+   $body_sin_formato = strip_tags($body[0]['value']);
+   $cuerpo_truncado = truncate_utf8($body_sin_formato, 320, FALSE, TRUE,1);
+    //  print_r($body);
       
+   
+    //$cuerpo_truncado = field_extract_values('node', $node, 'body', array('formatter' => 'teaser'));
+   
+  //  $cuerpo_truncado = field_view_field('node', $node, 'body', 'Teaser');
+    
+     print ('<div class="cuerpo_reportes">' .  $cuerpo_truncado . '</div>');  
+ 
     ?>
   </div>
 
@@ -81,3 +121,4 @@
   <?php print render($content['comments']); ?>
 
 </article>
+

@@ -1,4 +1,4 @@
-<?php //dpm($variables);
+<?php //dpm($node);
 /**drupal_add_js("jQuery(document).ready(function () 
 {
  // var original_html = JQuery('.field.field-name-body.field-type-text-with-summary.field-label-hidden').text();
@@ -45,13 +45,18 @@
 
 
     $titulo = field_get_items('node', $node, 'title_field');
-    $titulo_truncado = truncate_utf8(strip_tags($titulo[0]['value']), 77, False, TRUE,1);
-    $path = drupal_lookup_path('alias', "node/".$node->nid); 
+  //  print strlen(strip_tags($titulo[0]['value']));
+    if (strlen(strip_tags($titulo[0]['value'])) > 77):    
+       $titulo_truncado = truncate_utf8(strip_tags($titulo[0]['value']), 77, False, TRUE,1);
+//       $path = drupal_lookup_path('alias', 'node/'.$node->nid, $language); 
+       //print render($node->path['pathauto']);
+//       print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="/' . $path . '">' . $titulo_truncado . '</a></h3></div></div></div>');
+         print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="/node/' . $node->nid . '">' . render($titulo_truncado) . '</a></h3></div></div></div>');
+    else:
+         print render($content['title_field']);  
+    endif;
     
-      
-     print ('<div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h3><a href="' . $path . '">' . render($titulo_truncado) . '</a></h3></div></div></div>');
-
-
+    
     if ($display_submitted):    ?>
     <!--span class="glyphicon glyphicon-calendar" ></span--> 
       <div class="fecha">

@@ -88,7 +88,7 @@ if (diffipc_premise > 0) {
 			<td width="50%">
 				<?php print t('Dollar');?></td>
 			<td width="20%">
-				<?php echo date('d-M');?></td>
+				<?php echo t(date('d-M'));?></td>
 			<td width="20%">
 				<?php print t('y/y');?></td>
 			<td width="10%">

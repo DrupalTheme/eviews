@@ -126,3 +126,10 @@
     }
   }
 }
+
+/* language selection block */
+#block-block-2,
+#block-locale-language-content {
+  position: relative;
+  z-index: 10;
+}

@@ -140,7 +140,9 @@ h2.pane-title {
   }
 }
 
-.node-type-press #press-link a {
+.node-type-press #press-link a,
+.node-type-article #article-link a
+ {
   color: #FFF;
 
   &:hover {
@@ -156,7 +158,7 @@ h2.pane-title {
   }
 
 
-  .node-type-press #press-link,
+  .node-type-press #press-link, .node-type-article #article-link,
   .pane-node-created,
   .node-type-markets .pane-2,
   .pane-node-title {

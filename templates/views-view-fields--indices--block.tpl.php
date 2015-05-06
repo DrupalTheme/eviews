@@ -88,9 +88,9 @@ if (diffipc_premise > 0) {
 			<td width="50%">
 				<?php print t('Dollar');?></td>
 			<td width="20%">
-				<?php echo t(date('d-M'));?></td>
+				<?php echo date('d-') . t(date('M'));?></td>
 			<td width="20%">
-				<?php print t('y/y');?></td>
+				<?php print $view->field['field_fecha_anterior']->advanced_render($row);?></td>
 			<td width="10%">
 				&nbsp;</td>
 		</tr>
@@ -126,6 +126,9 @@ if (diffipc_premise > 0) {
 		</tr>
 	</tbody>
 </table>
+<p align="center" >
+<a href="coinmonitor.info" margin="10px" target="_blank">coinmonitor.info</a>
+</p>
 <table class="cotizaciones" id="indices"   height="84" width="100%">
 	<tbody>
 		<tr class="naranja">
@@ -170,5 +173,4 @@ if (diffipc_premise > 0) {
 		</tr>
 	</tbody>
 </table>
-
 

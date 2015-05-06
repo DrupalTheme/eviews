@@ -8637,7 +8637,8 @@ aside > .region {
 /* CSS3 Buttons */
 /* line 2, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a,
-.node-type-press #press-link, .view-sample a,
+.node-type-press #press-link, .node-type-article #article-link,
+.view-sample a,
 #block-block-6 a.btn,
 #block-block-10 a.btn,
 .field-type-file .file,
@@ -8672,9 +8673,10 @@ button.cupid-green {
   -webkit-transition-delay: 0.2s;
   transition: all 0.2s ease-in 0.2s;
 }
-/* line 33, ../sass/_buttons.scss */
+/* line 34, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:hover,
-.node-type-press #press-link:hover, .view-sample a:hover,
+.node-type-press #press-link:hover, .node-type-article #article-link:hover,
+.view-sample a:hover,
 #block-block-6 a.btn:hover,
 #block-block-10 a.btn:hover,
 .field-type-file .file:hover,
@@ -8690,9 +8692,10 @@ button.cupid-green:hover {
   box-shadow: 0 1px 0 0 #8dbf67 inset;
   cursor: pointer;
 }
-/* line 39, ../sass/_buttons.scss */
+/* line 40, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:active,
-.node-type-press #press-link:active, .view-sample a:active,
+.node-type-press #press-link:active, .node-type-article #article-link:active,
+.view-sample a:active,
 #block-block-6 a.btn:active,
 #block-block-10 a.btn:active,
 .field-type-file .file:active,
@@ -8715,7 +8718,7 @@ button.cupid-green:active {
 }
 
 /* blue button*/
-/* line 53, ../sass/_buttons.scss */
+/* line 54, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a,
 #block-block-6 a.btn, .view-sample a,
 #block-block-10 a.btn, .views-field-field-base .file,
@@ -8739,7 +8742,7 @@ button.cupid-green:active {
   -webkit-box-shadow: inset 0 1px 0 0 #02172d;
   box-shadow: inset 0 1px 0 0 #02172d;
 }
-/* line 69, ../sass/_buttons.scss */
+/* line 70, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:hover,
 #block-block-6 a.btn:hover, .view-sample a:hover,
 #block-block-10 a.btn:hover, .views-field-field-base .file:hover,
@@ -8762,7 +8765,7 @@ button.cupid-green:active {
   -webkit-box-shadow: inset 0 0 0 0 #04264b;
   box-shadow: inset 0 0 0 0 #04264b;
 }
-/* line 75, ../sass/_buttons.scss */
+/* line 76, ../sass/_buttons.scss */
 .not-logged-in .field-name-field-pdf a:active, .not-logged-in .field-name-field-pdf a:focus,
 #block-block-6 a.btn:active,
 #block-block-6 a.btn:focus, .view-sample a:active, .view-sample a:focus,
@@ -8796,8 +8799,9 @@ button.cupid-green:active {
 }
 
 /* orange button*/
-/* line 84, ../sass/_buttons.scss */
+/* line 85, ../sass/_buttons.scss */
 .node-type-press #press-link,
+.node-type-article #article-link,
 .webform-submit,
 a.user-register,
 .btn-orange {
@@ -8813,8 +8817,9 @@ a.user-register,
   -webkit-box-shadow: inset 0 1px 0 0 #e94707;
   box-shadow: inset 0 1px 0 0 #e94707;
 }
-/* line 93, ../sass/_buttons.scss */
+/* line 95, ../sass/_buttons.scss */
 .node-type-press #press-link:hover,
+.node-type-article #article-link:hover,
 .webform-submit:hover,
 a.user-register:hover,
 .btn-orange:hover {
@@ -8831,8 +8836,10 @@ a.user-register:hover,
   -webkit-box-shadow: inset 0 0 0 0 #e94707;
   box-shadow: inset 0 0 0 0 #e94707;
 }
-/* line 100, ../sass/_buttons.scss */
+/* line 102, ../sass/_buttons.scss */
 .node-type-press #press-link:active, .node-type-press #press-link:focus,
+.node-type-article #article-link:active,
+.node-type-article #article-link:focus,
 .webform-submit:active,
 .webform-submit:focus,
 a.user-register:active,
@@ -9308,6 +9315,14 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 #block-block-6 a.btn:hover,
 #block-block-10 a.btn:hover {
   color: #FFF;
+}
+
+/* language selection block */
+/* line 131, ../sass/_topbar.scss */
+#block-block-2,
+#block-locale-language-content {
+  position: relative;
+  z-index: 10;
 }
 
 /* Aside region style */
@@ -10135,24 +10150,26 @@ h2.pane-title {
 }
 
 /* line 143, ../sass/_market.scss */
-.node-type-press #press-link a {
+.node-type-press #press-link a,
+.node-type-article #article-link a {
   color: #FFF;
 }
-/* line 146, ../sass/_market.scss */
-.node-type-press #press-link a:hover {
+/* line 148, ../sass/_market.scss */
+.node-type-press #press-link a:hover,
+.node-type-article #article-link a:hover {
   color: #FFF;
 }
 
 @media (min-width: 720px) {
-  /* line 152, ../sass/_market.scss */
+  /* line 154, ../sass/_market.scss */
   .pane-node-field-image {
     float: left;
     margin-right: 25px;
     /*@include grid-span(2, 1);*/
   }
 
-  /* line 159, ../sass/_market.scss */
-  .node-type-press #press-link,
+  /* line 161, ../sass/_market.scss */
+  .node-type-press #press-link, .node-type-article #article-link,
   .pane-node-created,
   .node-type-markets .pane-2,
   .pane-node-title {
@@ -10160,32 +10177,32 @@ h2.pane-title {
   }
 
   /* Report pages */
-  /* line 173, ../sass/_market.scss */
+  /* line 175, ../sass/_market.scss */
   #mini-panel-fecha_trimestral,
   #mini-panel-fecha {
     color: #f09100;
     height: 25px;
     margin-left: 430px;
   }
-  /* line 179, ../sass/_market.scss */
+  /* line 181, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .panels-flexible-region,
   #mini-panel-fecha .panels-flexible-region {
     width: 100% !important;
   }
-  /* line 183, ../sass/_market.scss */
+  /* line 185, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .panel-separator,
   #mini-panel-fecha .panel-separator {
     border: 1px #e00 solid;
     display: none;
   }
-  /* line 188, ../sass/_market.scss */
+  /* line 190, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .pane-node-field-trimestre,
   #mini-panel-fecha_trimestral .pane-node-field-semana-id,
   #mini-panel-fecha .pane-node-field-trimestre,
   #mini-panel-fecha .pane-node-field-semana-id {
     float: left;
   }
-  /* line 193, ../sass/_market.scss */
+  /* line 195, ../sass/_market.scss */
   #mini-panel-fecha_trimestral .pane-node-created,
   #mini-panel-fecha .pane-node-created {
     float: left;
@@ -10504,7 +10521,7 @@ img {
 }
 
 /* line 47, ../sass/styles.scss */
-.node-type-press h1.page-header,
+.node-type-press h1.page-header, .node-type-markets h1.page-header,
 .page-base-de-datos h1.page-header,
 .page-node-25 h1.page-header,
 .page-reports h1.page-header,

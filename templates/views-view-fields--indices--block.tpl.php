@@ -1,6 +1,6 @@
 <?php //dpm($variables); ?>
 <?php
-
+/*
 
 drupal_add_js("jQuery(document).ready(function () 
 {
@@ -79,6 +79,8 @@ if (diffipc_premise > 0) {
   'group' => JS_THEME,
   'weight' => 5,
 ));
+* 
+* */
 ?>
 
 
@@ -87,12 +89,13 @@ if (diffipc_premise > 0) {
 		<tr class="naranja">
 			<td width="50%">
 				<?php print t('Dollar');?></td>
-			<td width="20%">
+			<td width="25%">
 				<?php echo date('d-') . t(date('M'));?></td>
-			<td width="20%">
-				<?php print $view->field['field_fecha_anterior']->advanced_render($row);?></td>
-			<td width="10%">
-				&nbsp;</td>
+			<td width="25%">
+				<?php //print $view->field['field_fecha_anterior']->advanced_render($row);
+				print t('y/y');
+				?></td>
+
 		</tr>
 		<tr id=tr_dolar_oficial">
 			<td>
@@ -101,8 +104,7 @@ if (diffipc_premise > 0) {
 				<?php print $view->field['field_dolar_oficial']->advanced_render($row);?> </td>
 			<td id="oficial_anterior">
 				 <?php print $view->field['field_dolar_oficial_anterior']->advanced_render($row); ?></td>
-			<td  id="dolar_oficial_indice" class="indice ">
-				--</td>
+
 		</tr>
 		<tr>
 			<td>
@@ -111,8 +113,7 @@ if (diffipc_premise > 0) {
 				<?php print $view->field['field_dolar_informal']->advanced_render($row); ?></td>
 			<td id="informal_anterior">
 				 <?php print $view->field['field_dolar_informal_anterior']->advanced_render($row); ?></td>
-			<td id="dolar_informal_indice" class="indice i_equal">
-				--</td>
+
 		</tr>
 		<tr>
 			<td>
@@ -121,26 +122,20 @@ if (diffipc_premise > 0) {
 				<?php print $view->field['field_contado_con_liqui']->advanced_render($row); ?></td>
 			<td id="ccl_anterior">
 				 <?php print $view->field['field_contado_con_liqui_anterior']->advanced_render($row); ?></td>
-			<td id="ccl_indice" class="indice i_down">
-				--</td>
+			
 		</tr>
 	</tbody>
 </table>
-<p align="center" >
-<a href="coinmonitor.info" margin="10px" target="_blank">coinmonitor.info</a>
-</p>
+
 <table class="cotizaciones" id="indices"   height="84" width="100%">
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">
 				<?php print t('Inflation');?></td>
-			<td width="20%">
+			<td width="25%">
 				<?php print t('m/m');?></td>
-			<td width="20%">
+			<td width="25%">
 				<?php print t('y/y');?></td>
-			<td width="10%">
-				&nbsp;</td>
-		</tr>
 		<tr>
 			<td>
 				<?php print t('CPInu');?></td>
@@ -148,8 +143,7 @@ if (diffipc_premise > 0) {
 				<?php print $view->field['field_ipcnu']->advanced_render($row); ?></td>
 			<td id="ipcnu_anterior">
 				<?php print $view->field['field_ipcnu_anterior']->advanced_render($row); ?></td>
-			<td id="ipcnu_indice" class="indice i_equal">
-				--</td>
+			
 		</tr>
 		<tr>
 			<td>
@@ -158,8 +152,7 @@ if (diffipc_premise > 0) {
 				<?php print $view->field['field_ipc_congreso']->advanced_render($row); ?></td>
 			<td id="ipc_congreso_anterior">
 				 <?php print $view->field['field_ipc_congreso_anterior']->advanced_render($row); ?></td>
-			<td id="ipc_congreso_indice" class="indice i_up">
-				--</td>
+			
 		</tr>
 		<tr>
 			<td>
@@ -167,10 +160,12 @@ if (diffipc_premise > 0) {
 			<td id="ipc_premise">
 				<?php print $view->field['field_ipc_premise']->advanced_render($row); ?></td>
 			<td id="ipc_premise_anterior">
-				<?php print $view->field['field_ipc_premise_anterior']->advanced_render($row); ?>
-			<td id="ipc_premise_indice"  class="indice i_down">
-				--</td>
+				<?php print $view->field['field_ipc_premise_anterior']->advanced_render($row); ?></td>
+
+				
 		</tr>
 	</tbody>
 </table>
-
+<p align="right" style="font-size: x-small ! important;">
+<a href="http://coinmonitor.info"  target="_blank">coinmonitor.info</a>
+</p>

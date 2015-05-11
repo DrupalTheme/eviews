@@ -140,27 +140,27 @@ if (diffipc_premise > 0) {
 			<td>
 				<?php print t('CPInu');?></td>
 			<td id="ipcnu">
-				<?php print $view->field['field_ipcnu']->advanced_render($row); ?></td>
+				<?php print $view->field['field_ipcnu']->advanced_render($row); ?>%</td>
 			<td id="ipcnu_anterior">
-				<?php print $view->field['field_ipcnu_anterior']->advanced_render($row); ?></td>
+				<?php print $view->field['field_ipcnu_anterior']->advanced_render($row); ?>%</td>
 			
 		</tr>
 		<tr>
 			<td>
 				<?php print t('Congress CPI');?></td>
 			<td id="ipc_congreso">
-				<?php print $view->field['field_ipc_congreso']->advanced_render($row); ?></td>
+				<?php print $view->field['field_ipc_congreso']->advanced_render($row); ?>%</td>
 			<td id="ipc_congreso_anterior">
-				 <?php print $view->field['field_ipc_congreso_anterior']->advanced_render($row); ?></td>
+				 <?php print $view->field['field_ipc_congreso_anterior']->advanced_render($row); ?>%</td>
 			
 		</tr>
 		<tr>
 			<td>
 				<?php print t('Premise CPI');?></td>
 			<td id="ipc_premise">
-				<?php print $view->field['field_ipc_premise']->advanced_render($row); ?></td>
+				<?php print $view->field['field_ipc_premise']->advanced_render($row); ?>%</td>
 			<td id="ipc_premise_anterior">
-				<?php print $view->field['field_ipc_premise_anterior']->advanced_render($row); ?></td>
+				<?php print $view->field['field_ipc_premise_anterior']->advanced_render($row); ?>%</td>
 
 				
 		</tr>

@@ -9000,12 +9000,20 @@ p.logout {
   float: right;
 }
 
-/* Navegacion principal */
+/* bloque logout cambio de idioma en base de datos */
 /* line 6, ../sass/_navigation.scss */
+#block-block-19 {
+  left: 40px;
+  position: relative;
+  top: 0px;
+}
+
+/* Navegacion principal */
+/* line 12, ../sass/_navigation.scss */
 .navbar-collapse {
   padding: 0;
 }
-/* line 9, ../sass/_navigation.scss */
+/* line 15, ../sass/_navigation.scss */
 .navbar-collapse ul {
   padding: 0 10px;
   -moz-border-radius: 5px;
@@ -9013,45 +9021,45 @@ p.logout {
   border-radius: 5px;
 }
 
-/* line 16, ../sass/_navigation.scss */
+/* line 22, ../sass/_navigation.scss */
 .navbar-default .navbar-toggle {
   background: #052D62;
   border-color: #0E2646;
 }
 
-/* line 20, ../sass/_navigation.scss */
+/* line 26, ../sass/_navigation.scss */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #274D79;
 }
 
-/* line 24, ../sass/_navigation.scss */
+/* line 30, ../sass/_navigation.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
-/* line 28, ../sass/_navigation.scss */
+/* line 34, ../sass/_navigation.scss */
 .visible-xs ul.navbar-nav {
   background: #052D62;
 }
-/* line 32, ../sass/_navigation.scss */
+/* line 38, ../sass/_navigation.scss */
 .visible-xs ul.navbar-nav li a {
   color: #FFF;
   border-bottom: 1px #FFF solid;
 }
-/* line 36, ../sass/_navigation.scss */
+/* line 42, ../sass/_navigation.scss */
 .visible-xs ul.navbar-nav li a:hover, .visible-xs ul.navbar-nav li a:focus {
   color: #FFF;
   background-color: #274D79;
 }
-/* line 45, ../sass/_navigation.scss */
+/* line 51, ../sass/_navigation.scss */
 .visible-xs ul.navbar-nav li.open a,
 .visible-xs ul.navbar-nav li.open a:hover, .visible-xs ul.navbar-nav li.active a,
 .visible-xs ul.navbar-nav li.active a:hover {
   color: #FFF !important;
   background-color: #274D79 !important;
 }
-/* line 51, ../sass/_navigation.scss */
+/* line 57, ../sass/_navigation.scss */
 .visible-xs ul.navbar-nav li.open ul li a, .visible-xs ul.navbar-nav li.active ul li a {
   background: transparent !important;
   display: inline-block;
@@ -9060,25 +9068,25 @@ p.logout {
   width: 100%;
 }
 
-/* line 63, ../sass/_navigation.scss */
+/* line 69, ../sass/_navigation.scss */
 #block-superfish-1,
 #block-superfish-2 {
   float: left;
 }
 
-/* line 71, ../sass/_navigation.scss */
+/* line 77, ../sass/_navigation.scss */
 .sf-accordion-toggle {
   display: none;
 }
 
-/* line 74, ../sass/_navigation.scss */
+/* line 80, ../sass/_navigation.scss */
 .sf-menu {
   display: inline-block;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 81, ../sass/_navigation.scss */
+/* line 87, ../sass/_navigation.scss */
 .sf-menu li a {
   border-right: 1px #376faa solid;
   color: #FFF;
@@ -9087,31 +9095,31 @@ p.logout {
   font-weight: lighter;
   padding: 12px 20px !important;
 }
-/* line 89, ../sass/_navigation.scss */
+/* line 95, ../sass/_navigation.scss */
 .sf-menu li a:hover, .sf-menu li a:active {
   text-decoration: none;
 }
-/* line 93, ../sass/_navigation.scss */
+/* line 99, ../sass/_navigation.scss */
 .sf-menu li a:focus {
   text-decoration: none;
 }
-/* line 98, ../sass/_navigation.scss */
+/* line 104, ../sass/_navigation.scss */
 .sf-menu li.first a {
   border-left: 1px #376faa solid;
 }
 
-/* line 105, ../sass/_navigation.scss */
+/* line 111, ../sass/_navigation.scss */
 .sf-menu ul {
   padding: 0;
   text-align: center;
   top: 48px !important;
   display: none;
 }
-/* line 111, ../sass/_navigation.scss */
+/* line 117, ../sass/_navigation.scss */
 .sf-menu ul li:first-child {
   position: relative;
 }
-/* line 114, ../sass/_navigation.scss */
+/* line 120, ../sass/_navigation.scss */
 .sf-menu ul li:first-child:before {
   border-color: transparent transparent #084AA1 transparent;
   border-style: solid;
@@ -9121,11 +9129,11 @@ p.logout {
   top: -16px;
   left: 45%;
 }
-/* line 125, ../sass/_navigation.scss */
+/* line 131, ../sass/_navigation.scss */
 .sf-menu ul li:first-child:hover:before {
   border-color: transparent transparent #28578F transparent;
 }
-/* line 130, ../sass/_navigation.scss */
+/* line 136, ../sass/_navigation.scss */
 .sf-menu ul li:first-child a {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -9134,7 +9142,7 @@ p.logout {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 135, ../sass/_navigation.scss */
+/* line 141, ../sass/_navigation.scss */
 .sf-menu ul li:last-child a {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -9143,7 +9151,7 @@ p.logout {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 140, ../sass/_navigation.scss */
+/* line 146, ../sass/_navigation.scss */
 .sf-menu ul li a {
   border: none;
   display: inline-block;
@@ -9151,14 +9159,14 @@ p.logout {
   width: 100%;
 }
 
-/* line 149, ../sass/_navigation.scss */
+/* line 155, ../sass/_navigation.scss */
 a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
   right: 0.5em;
   top: 0.9em;
 }
 
 /* Samll Screens */
-/* line 155, ../sass/_navigation.scss */
+/* line 161, ../sass/_navigation.scss */
 .visible-xs ul li ul {
   background: transparent;
   border: none;
@@ -9168,7 +9176,7 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
   width: 100%;
   box-shadow: none;
 }
-/* line 165, ../sass/_navigation.scss */
+/* line 171, ../sass/_navigation.scss */
 .visible-xs ul li ul li a {
   padding: 15px 0 15px 20px;
 }

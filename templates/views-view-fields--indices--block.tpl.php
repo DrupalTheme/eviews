@@ -88,7 +88,7 @@ if (diffipc_premise > 0) {
 	<tbody>
 		<tr class="naranja">
 			<td width="50%">
-				<?php print t('Dollar');?></td>
+				<?php print t('Exchange rate');?></td>
 			<td width="25%">
 				<?php echo date('d-') . t(date('M'));?></td>
 			<td width="25%">
@@ -103,7 +103,7 @@ if (diffipc_premise > 0) {
 			<td id="oficial">
 				<?php print $view->field['field_dolar_oficial']->advanced_render($row);?> </td>
 			<td id="oficial_anterior">
-				 <?php print $view->field['field_dolar_oficial_anterior']->advanced_render($row); ?></td>
+				 <?php print $view->field['field_dolar_oficial_anterior']->advanced_render($row); ?>%</td>
 
 		</tr>
 		<tr>
@@ -112,7 +112,7 @@ if (diffipc_premise > 0) {
 			<td id="informal">
 				<?php print $view->field['field_dolar_informal']->advanced_render($row); ?></td>
 			<td id="informal_anterior">
-				 <?php print $view->field['field_dolar_informal_anterior']->advanced_render($row); ?></td>
+				 <?php print $view->field['field_dolar_informal_anterior']->advanced_render($row); ?>%</td>
 
 		</tr>
 		<tr>
@@ -121,11 +121,22 @@ if (diffipc_premise > 0) {
 			<td id="ccl">
 				<?php print $view->field['field_contado_con_liqui']->advanced_render($row); ?></td>
 			<td id="ccl_anterior">
-				 <?php print $view->field['field_contado_con_liqui_anterior']->advanced_render($row); ?></td>
+				 <?php print $view->field['field_contado_con_liqui_anterior']->advanced_render($row); ?>%</td>
+			
+		</tr>
+				<tr>
+			<td>
+				<?php print t('Real');?></td>
+			<td id="real">
+				<?php // print $view->field['field_btc']->advanced_render($row);
+				print $view->field['field_real']->advanced_render($row);				?></td>
+			<td id="real_anterior"> <?php print $view->field['field_real_anterior']->advanced_render($row); ?>%</td>
+				</td>
 			
 		</tr>
 	</tbody>
 </table>
+
 
 <table class="cotizaciones" id="indices"   height="84" width="100%">
 	<tbody>
@@ -166,6 +177,6 @@ if (diffipc_premise > 0) {
 		</tr>
 	</tbody>
 </table>
-<p align="right" style="font-size: x-small ! important;">
-<a href="http://coinmonitor.info"  target="_blank">coinmonitor.info</a>
+<p ><span align="right" style="float:right;font-size: x-small ! important;">
+<a href="http://coinmonitor.info"  target="_blank">coinmonitor.info</a> &nbsp;&nbsp;</span>
 </p>

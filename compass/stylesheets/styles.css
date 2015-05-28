@@ -10286,7 +10286,7 @@ img.twitter_ico {
 }
 /* line 23, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-2 .contact-info {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 100;
   margin-bottom: 40px;
   overflow: hidden;
@@ -10356,38 +10356,39 @@ img.twitter_ico {
 }
 /* line 91, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 .form-item label {
+  font-size: 14px;
   top: 12px;
   left: 10px;
 }
-/* line 96, ../sass/_contactpage.scss */
+/* line 97, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 .form-item input {
   height: 50px;
   padding: 15px 10px;
 }
-/* line 102, ../sass/_contactpage.scss */
+/* line 103, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 .webform-component-email {
   min-height: 50px;
 }
-/* line 106, ../sass/_contactpage.scss */
+/* line 107, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 .compact-form-wrapper {
   position: relative;
 }
-/* line 110, ../sass/_contactpage.scss */
+/* line 111, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 label.compact-form-label {
   z-index: 10;
 }
-/* line 114, ../sass/_contactpage.scss */
+/* line 115, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 input#edit-submitted-e-mail {
   width: 100%;
   height: 100%;
 }
-/* line 119, ../sass/_contactpage.scss */
+/* line 120, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 .form-text, .page-node-25 .panels-flexible-column-3-3 .form-textarea {
   border: none;
   font-size: 18px;
   padding: 10px;
 }
-/* line 125, ../sass/_contactpage.scss */
+/* line 126, ../sass/_contactpage.scss */
 .page-node-25 .panels-flexible-column-3-3 .webform-submit {
   font-size: 20px;
   font-weight: bold;
@@ -10700,4 +10701,9 @@ aside {
 /* line 189, ../sass/styles.scss */
 .node-teaser h3 a {
   font-size: 20px;
+}
+
+/* line 193, ../sass/styles.scss */
+p.search-info {
+  display: none;
 }

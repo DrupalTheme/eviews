@@ -167,7 +167,7 @@ if (diffipc_premise > 0) {
 		</tr>
 		<tr>
 			<td>
-				<?php print t('Premise CPI');?></td>
+				<?php print t('CPIBA');?></td>
 			<td id="ipc_premise">
 				<?php print $view->field['field_ipc_premise']->advanced_render($row); ?>%</td>
 			<td id="ipc_premise_anterior">
